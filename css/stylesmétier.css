@@ -1,0 +1,18 @@
+
+
+.block1
+{
+	border: 4mm ridge yellow;
+	display:flex;
+	flex-direction: wrap;
+	width :50%;
+	margin:auto;
+	background: white;
+}
+
+.block2
+{
+	display:flex;
+	width: 30%;
+	margin: auto;
+}

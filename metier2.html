@@ -3,35 +3,39 @@
 	<head>
       	<meta charset="utf-8">
       	<title>Stilex-Huminex-Accueil</title>
-      	<link rel="stylesheet" type="text/css" href="css/styles.css">
+      	<link rel="stylesheet" type="text/css" href="css/styles.css" >
+      	<link rel="stylesheet" type="text/css" href="css/stylesmétier.css" >
+
       	<link rel="icon" type="image/ico" href="images/favicon.ico" />
     </head>
     <body> 
     	<main>
     		<p><h1>Candidature <strong>Chef de Structure du Cloud</strong> </h1></p>
     		<form action="sendToMySecondYearInIut.php" method="get">
-	    		<fieldset>
-	    			<legend><h2>Informations personnelles</h2></legend>
-	    			<div>
-	                    <label for="NomFamille">Nom * :</label>
-	                    <input id="Nomfamille" name="uname" type="text" required tabindex="1"> 
-	                </div>
-	                <div>
-	                    <label for="Prenom">Prenom * :</label>
-	                    <input id="Prenom" name="uname" type="text" required tabindex="1"> 
-	                </div>
-	                <div>
-	                    <input type="radio" id="homme" name="sexe" value="homme" tabindex="3">
-	                    <label for="homme">Homme</label>
+	    		<div class="block2">
+		    		<fieldset>
+		    			<legend><h2>Informations personnelles</h2></legend>
+		    			<div>
+		                    <label for="NomFamille">Nom * :</label>
+		                    <input id="Nomfamille" name="uname" type="text" required tabindex="1"> 
+		                </div>
+		                <div>
+		                    <label for="Prenom">Prenom * :</label>
+		                    <input id="Prenom" name="uname" type="text" required tabindex="1"> 
+		                </div>
+		                <div>
+		                    <input type="radio" id="homme" name="sexe" value="homme" tabindex="3">
+		                    <label for="homme">Homme</label>
 
-	                    <input type="radio" id="femme" name="sexe" value="femme" tabindex="4">
-	                    <label for="femme">Femme</label>
-	                </div>
-	                <div>
-	                	<label for="cv"> Joindre votre CV </label>
-	                	<input id="cv" name="monCv" type="file">
-	                </div>
-	            </fieldset>
+		                    <input type="radio" id="femme" name="sexe" value="femme" tabindex="4">
+		                    <label for="femme">Femme</label>
+		                </div>
+		                <div>
+		                	<label for="cv"> Joindre votre CV </label>
+		                	<input id="cv" name="monCv" type="file">
+		                </div>
+		            </fieldset>
+		        </div>
             </form>
         </main>
     </body>
