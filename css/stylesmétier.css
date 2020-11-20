@@ -4,15 +4,23 @@
 {
 	border: 4mm ridge yellow;
 	display:flex;
-	flex-direction: wrap;
+	flex-direction: column;
 	width :50%;
 	margin:auto;
 	background: white;
+	text-align:center;
 }
 
 .block2
 {
-	display:flex;
-	width: 30%;
-	margin: auto;
+	display:inline-block;
+	width : 30%;
+	text-align:center;
+} 
+.block3
+{
+
+	text-align:center;
+	padding-bottom: 20px;
+	
 }

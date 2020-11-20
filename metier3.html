@@ -7,7 +7,18 @@
       	<link rel="stylesheet" type="text/css" href="css/stylesmétier.css" >
       	<link rel="icon" type="image/ico" href="images/favicon.ico" />
     </head>
-    <body> 
+    <body>
+    	<header id="top_page">
+            <nav>
+                <a href="./index.html">Accueil</a>
+                <a href="./produit.html">Produit</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./presse.html">Presse</a>
+                <a href="./rejoindre.html">Rejoindre</a>
+                <a href="./equipe.html">Equipe</a>
+                <a href="./faq.html">FAQ</a>
+              </nav>
+        </header> 
     	<main>
 	    	<div class ="block1">
 	    		<p><h1>Candidature <strong>Ingénieur Java Script</strong> </h1></p>
@@ -17,22 +28,31 @@
 			    			<legend><h2>Informations personnelles</h2></legend>
 			    			<div>
 			                    <label for="NomFamille">Nom * :</label>
-			                    <input id="Nomfamille" name="uname" type="text" required tabindex="1"> 
+			                    <input id="Nomfamille" name="uname" type="text" required> 
 			                </div>
 			                <div>
 			                    <label for="Prenom">Prenom * :</label>
-			                    <input id="Prenom" name="uname" type="text" required tabindex="1"> 
+			                    <input id="Prenom" name="uname" type="text" required> 
 			                </div>
 			                <div>
-			                    <input type="radio" id="homme" name="sexe" value="homme" tabindex="3">
+			                    <input type="radio" id="homme" name="sexe" value="homme">
 			                    <label for="homme">Homme</label>
 
-			                    <input type="radio" id="femme" name="sexe" value="femme" tabindex="4">
+			                    <input type="radio" id="femme" name="sexe" value="femme">
 			                    <label for="femme">Femme</label>
 			                </div>
 			                <div>
 			                	<label for="cv"> Joindre votre CV </label>
 			                	<input id="cv" name="monCv" type="file">
+			                </div>
+			            </fieldset>
+			        </div>
+			        <div class="block3">
+			            <fieldset>
+			            	<div>
+			                    <label for="lettremotivation">Lettre de motivation * :</label>
+			                   <textarea name="message" id = "lettremotivation" rows="3" cols="35" placeholder="Veuillez écrire votre lettre de motivation" tabindex="15"></textarea>
+
 			                </div>
 			            </fieldset>
 		        	</div>
