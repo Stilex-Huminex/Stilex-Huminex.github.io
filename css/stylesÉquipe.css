@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "SLANT";
+    src: url(asset/SLANT.TTF);
+}
+
+body {
+    /*background-color: #f8ee00;*/
+}
+
+h1 {
+    font-family: "SLANT";
+}
