@@ -12,6 +12,7 @@ article{
 	
 	
 }
+
 article > fieldset {
 	
 	padding: 10px 0px;
@@ -20,6 +21,7 @@ article > fieldset {
 	width:300px;
 	font-size:20px;
 	display:inline;
+	height:180px;
 }
 h1{
 	font-size:50px;
@@ -43,4 +45,8 @@ textarea{
 	margin-left: auto;
     margin-right: auto;
 	height:30px;
+}
+header{
+	font-size:10px;
+	color:pink;
 }
