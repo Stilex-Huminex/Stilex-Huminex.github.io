@@ -6,8 +6,18 @@ header{
 nav a {
     display: inline;
     font-size: 250%;
+    margin: 20px;
+}
+a {
+    color: #44ff92;
+}
+a:hover {
+    color: #FCFF92;
 }
 body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(asset/wallpaper.jpg);
     background-position: center;
     background-repeat: no-repeat;
