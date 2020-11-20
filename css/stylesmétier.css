@@ -1,13 +1,17 @@
+h1
+{
+	border: solid red;
 
+}
 
 .block1
 {
-	border: 4mm ridge yellow;
+	border: 4mm ridge rgb(05,18,216);
 	display:flex;
 	flex-direction: column;
 	width :50%;
 	margin:auto;
-	background: white;
+	background-color: rgba(255,255,255, 0.5);
 	text-align:center;
 }
 

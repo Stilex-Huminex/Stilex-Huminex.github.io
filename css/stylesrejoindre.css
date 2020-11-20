@@ -1,10 +1,16 @@
+p
+{
+	border: solid red;
+
+}
+
 .block1
 {
-	border: 4mm ridge yellow;
+	border: 4mm ridge rgb(250,237,39);
 	display:flex;
 	flex-direction: column;
 	text-align:center;
-	width :50%;
+	width :30%;
 	margin:auto;
-	background: white;
+	background-color: rgba(255,255,255, 0.5);
 }
