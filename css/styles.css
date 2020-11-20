@@ -1,3 +1,12 @@
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+nav a {
+    display: inline;
+    font-size: 250%;
+}
 body{
     background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(asset/wallpaper.jpg);
     background-position: center;

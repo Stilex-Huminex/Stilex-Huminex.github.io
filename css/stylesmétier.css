@@ -19,8 +19,12 @@
 } 
 .block3
 {
-
+	display:inline-block;
+	width : 80%;
 	text-align:center;
 	padding-bottom: 20px;
 	
+}
+textarea {
+	width: 100%;
 }
