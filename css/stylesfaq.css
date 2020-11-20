@@ -5,3 +5,12 @@ body{
     background-attachment: fixed;
     background-size:cover;
 }
+
+@font-face {
+    font-family: "SLANT";
+    src: url(asset/SLANT.TTF);
+}
+
+h1 {
+    font-family: "SLANT";
+}

@@ -14,14 +14,14 @@ h1 {
 
 .overlay-image {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
 }
 
 .overlay-image .image {
  display: block;
- width: 300px;
- height: 300px;
+ width: 500px;
+ height: 5  00px;
 }
 
 .overlay-image .hover {
