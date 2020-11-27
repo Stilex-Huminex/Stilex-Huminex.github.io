@@ -1,6 +1,6 @@
 h1
 {
-	border: solid red;
+	border: solid black;
 
 }
 
@@ -27,6 +27,9 @@ h1
 	text-align:center;
 	padding-bottom: 20px;
 	
+}
+fieldset{
+	border:5px solid black;
 }
 textarea {
 	width: 100%;
