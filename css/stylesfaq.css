@@ -1,12 +1,29 @@
+.css-selector {
+    background: linear-gradient(0deg, #00c5ff, #f200ff, #00ff91, #ffa154);
+    background-size: 800% 800%;
+
+    animation: Question 4s ease infinite;
+}
+
+@keyframes Question {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
+
+
 @font-face {
     font-family: "SLANT";
     src: url(asset/SLANT.TTF);
 }
 
 main {
-    width: 1000px;
+    width: 80%;
+    padding-top: 3%;
     font-family: Arial;
 }
+
 
 div.preface {
     font-family: "SLANT";
@@ -38,6 +55,7 @@ div.encadre article h1 {
 div.corps article {
     margin-top: 20px;
     position: static;
+    display:block;
 }
 
 div.corps article div h2 {
@@ -47,6 +65,8 @@ div.corps article div h2 {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    justify-content: center ;
     position:static;
     font-family: "SLANT";
 }
@@ -74,9 +94,20 @@ div.corps div h4{
 div.corps div h2:hover+div h4{
     display: block;
 }
+
+div.corps div h2:hover, div.corps div div h4:hover{
+    background: linear-gradient(0deg, #00c5ff, #f200ff, #00ff91, #ffa154);
+    background-size: 800% 800%;
+    animation: Question 10s ease infinite;
+    transition: goldenrod 1s;
+    
+}
+
+
 div.corps div h2+div h4:hover{
     display: block;
 }
+
 
 div a#Q {
     border-bottom: 2px ridge goldenrod;
