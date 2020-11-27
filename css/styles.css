@@ -95,7 +95,7 @@ div:hover > .submenu {
     display: inline;  
 }
 body{
-    height: 100%;
+    height: 99%;
     display: flex;
     align-items: center;
     flex-direction: column;
