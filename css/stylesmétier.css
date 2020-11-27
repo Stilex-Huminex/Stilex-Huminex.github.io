@@ -18,10 +18,11 @@ form{
 form > .block1
 {
 	width:40%;
-	font-size: 120%;
+	
 	background-color: rgba(255,255,255, 0.5);
 	text-align:center;
 	border-radius : 10px;
+	font-size: 150%;
 
 }
 form > .all
@@ -58,6 +59,8 @@ form > .all
 .block5
 {
 	display: inline;
+	text-align : center;
+	width:30%;
 }
 .bouton>input
 {

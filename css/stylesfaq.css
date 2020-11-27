@@ -8,9 +8,19 @@ main {
     font-family: Arial;
 }
 
+div.preface {
+    font-family: "SLANT";
+    font-size: 35px;
+    text-align: justify;
+}
+
 div.questions {
-    display:flex
+    display:flex;
     border-bottom: 3px solid white;
+}
+
+div.encadre {
+    margin-bottom: 7mm;
 }
 
 div.encadre article {
@@ -52,17 +62,21 @@ div.corps article h4 {
 div a#Q {
     border-bottom: 2px ridge goldenrod;
     border-spacing: 50px;
-    display: flex;
+    display: inline;
 }
 
-a:visited#Q{
+div a:visited#Q{
     color: blueviolet;
 }
 
-a:hover#Q{
+div a:hover#Q{
     color: green;
 }
 
 ul li{
     color: black;
+}
+
+#souligne{
+    text-decoration: underline;
 }
