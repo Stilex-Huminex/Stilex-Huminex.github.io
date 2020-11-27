@@ -5,7 +5,6 @@
       	<title>Stilex-Huminex - metier2</title>
       	<link rel="stylesheet" type="text/css" href="css/styles.css" >
       	<link rel="stylesheet" type="text/css" href="css/stylesmétier.css" >
-
       	<link rel="icon" type="image/ico" href="images/favicon.ico" />
     </head>
     <body>
@@ -22,45 +21,59 @@
               </nav>
         </header> 
     	<main>
-	    	<div class ="block1">
-	    		<p><h1>Candidature <strong>Structurateur Cloud</strong> </h1></p>
 	    		<form action="sendToMySecondYearInIut.php" method="get">
-		    		<div class="block2">
+	    			<div class ="block1">
+	    				<p><h1>Candidature <strong>Structurateur could</strong> </h1></p>
+	    			</div>
+	    			<div class="all">
+	    			<div class="block2">
 			    		<fieldset>
 			    			<legend><h2>Informations personnelles</h2></legend>
 			    			<div>
 			                    <label for="NomFamille">Nom * :</label>
-			                    <input id="Nomfamille" name="uname" type="text" required tabindex="1"> 
+			                    <input id="Nomfamille" name="uname" type="text" required> 
 			                </div>
 			                <div>
 			                    <label for="Prenom">Prenom * :</label>
-			                    <input id="Prenom" name="uname" type="text" required tabindex="1"> 
+			                    <input id="Prenom" name="uname" type="text" required> 
 			                </div>
 			                <div>
-			                    <input type="radio" id="homme" name="sexe" value="homme" tabindex="3">
+			                    <input type="radio" id="homme" name="sexe" value="homme">
 			                    <label for="homme">Homme</label>
 
-			                    <input type="radio" id="femme" name="sexe" value="femme" tabindex="4">
+			                    <input type="radio" id="femme" name="sexe" value="femme">
 			                    <label for="femme">Femme</label>
 			                </div>
-			                <div>
-			                	<label for="cv"> Joindre votre CV </label>
-			                	<input id="cv" name="monCv" type="file">
-			                </div>
+			            
 			            </fieldset>
 			        </div>
+			   		
+			   		
 			        <div class="block3">
-			        	<fieldset>
+			            <fieldset>
 			            	<div>
-			                    <label for="lettremotivation"><h2>Lettre de motivation * :<h2></label>
+			                    <label for="lettremotivation"><h2>Lettre de motivation * :</h2></label>
 			                   <textarea name="message" id = "lettremotivation" rows="3" cols="35" placeholder="Veuillez écrire votre lettre de motivation" tabindex="15"></textarea>
 
 			                </div>
 			            </fieldset>
-		        		</div>
-			        </div>
-	            </form>
-	        </div>
+			        
+		        	</div>
+		        	<div class ="block4">
+		        		<fieldset>
+		        			<legend><h2>Envovyé nous votre CV </h2></legend>
+		        			 <div>
+			                	<label for="cv"> Joindre votre CV </label>
+			                	<input id="cv" name="monCv" type="file">
+			                </div>
+		        		</fieldset>
+		        	<div class ='block5'>
+		        		<div class='bouton'>
+		        			<input class="envoyer"type="submit" value="Envoyer">
+		        		</div>	
+		        	</div>
+		        </div>
+	     	</form>
         </main>
     </body>
 </html>
