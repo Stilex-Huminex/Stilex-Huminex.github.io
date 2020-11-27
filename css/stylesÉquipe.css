@@ -3,6 +3,14 @@
     src: url(asset/SLANT.TTF);
 }
 
+@media(min-width: 321px) and (max-width: 799px){ /*Smartphones*/
+
+}
+
+@media(min-width: 800px) and (max-width: 966px){ /*Tablettes */
+    
+}
+
 body {
     /*background-color: #f8ee00;*/
 }
@@ -13,16 +21,18 @@ h1 {
     color: #f8ee00;
 }
 
+
+
+
 .overlay-image {
     position: relative;
-    width: 500px;
-    height: 500px;
+    
 }
 
 .overlay-image .image {
- display: block;
- width: 500px;
- height: 500px;
+    display: inline;
+    width: 300px;
+    height: 300px;
 }
 
 .overlay-image .hover {
@@ -33,6 +43,11 @@ h1 {
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0,0,0,0.5);
+}
+
+.overlay-image .image2, .overlay-image .image3 {
+    height: 120%;
+    width: 120%;
 }
    
 .overlay-image:hover .hover {
@@ -53,11 +68,10 @@ h1 {
     opacity: 1;
 }
 
-.overlay-image:hover .lueur {
-    border: 4mm ridge yellow;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
-    background: white;
+.image2:hover {
+    display: block;
+    position: absolute;
+    float: left;
+    box-shadow: -1px 2px 70px 3px rgba(236, 8, 236, 0.7);
+    line-height: 1px;
 }
