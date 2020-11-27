@@ -16,17 +16,16 @@ body {
 }
 
 h1 {
+    text-align: center;
     font-family: "SLANT";
     font-size: 50px;
     color: #f8ee00;
 }
 
-
-
-
 .overlay-image {
     position: relative;
-    
+    display: inline-block;
+    padding-right: 25px;
 }
 
 .overlay-image .image {
@@ -38,16 +37,9 @@ h1 {
 .overlay-image .hover {
     position: absolute;
     top: 0;
-    height: 100%;
-    width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0,0,0,0.5);
-}
-
-.overlay-image .image2, .overlay-image .image3 {
-    height: 120%;
-    width: 120%;
 }
    
 .overlay-image:hover .hover {
@@ -57,8 +49,6 @@ h1 {
 .overlay-image .hover2 {
     position: absolute;
     top: 0;
-    height: 100%;
-    width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0,0,0,0.5);
@@ -68,10 +58,17 @@ h1 {
     opacity: 1;
 }
 
-.image2:hover {
+.image3:hover {
     display: block;
     position: absolute;
     float: left;
     box-shadow: -1px 2px 70px 3px rgba(236, 8, 236, 0.7);
     line-height: 1px;
+}
+
+.image2, .image3, .overlay-image .hover, .overlay-image .hover2{
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
 }
