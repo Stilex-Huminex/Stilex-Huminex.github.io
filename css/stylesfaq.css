@@ -36,27 +36,46 @@ div.encadre article h1 {
 }
 
 div.corps article {
-    display: block;
     margin-top: 20px;
+    position: static;
 }
 
-div.corps article h2 {
+div.corps article div h2 {
     border: 1mm ridge black;
     background-color: rgba(255,255,255, 0.5);
     padding: 15px 10px 15px 10px;
     margin-top: 10px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     position:static;
     font-family: "SLANT";
 }
 
-div.corps article h4 {
+
+div.corps>article>div {
+    margin-bottom:7mm;
+}
+
+div.corps>article>div div{
+    margin-top:-20px;
+}
+
+div.corps div h4{
     border: 1mm ridge black;
     border-top: 0mm;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(255, 240, 152, 0.5);
+    margin-top: 0%;
+    margin-bottom:7mm;
     padding: 15px 10px 15px 10px;
-    display: block;
+    display: none;
     position: relative;
+}
+
+div.corps div h2:hover+div h4{
+    display: block;
+}
+div.corps div h2+div h4:hover{
+    display: block;
 }
 
 div a#Q {
