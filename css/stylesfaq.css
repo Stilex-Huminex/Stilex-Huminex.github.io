@@ -49,11 +49,10 @@ div.corps article h4 {
     position: relative;
 }
 
-
 div a#Q {
     border-bottom: 2px ridge goldenrod;
     border-spacing: 50px;
-    display: inline;
+    display: flex;
 }
 
 a:visited#Q{
