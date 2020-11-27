@@ -11,30 +11,30 @@ article h1 {
 article.encadre {
     border: 1mm ridge black;
     background-color: rgba(255,255,255, 0.5);
-    padding-top: 2%;
-    margin-top: 10%;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-top: 20px;
     display: flex;
 }
 
 article.corps {
-    display: block;
-    margin: auto;
+    display: flex;
+    margin-top: 20px;
 }
 
 article.corps h2 {
     border: 1mm ridge black;
     background-color: rgba(255,255,255, 0.5);
-    padding-top: 2%;
-    margin-top: 10%;
-    display: inline;
-    font:Impact;
+    padding-top: 20px;
+    margin-top: 10px;
+    display: flex;
 }
 
 article h1#entete { 
     text-align: center;
 }
 div a#Q {
-    border-bottom: 2px ridge goldenrod;;
+    border-bottom: 2px ridge goldenrod;
     border-spacing: 50px;
     display: inline;
 }
