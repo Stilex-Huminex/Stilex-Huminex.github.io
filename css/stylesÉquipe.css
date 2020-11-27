@@ -3,16 +3,12 @@
     src: url(asset/SLANT.TTF);
 }
 
-@media(min-width: 321px) and (max-width: 799px){ /*Smartphones*/
-
+@media(max-width: 480px) {
+    footer {display: none;}
 }
 
-@media(min-width: 800px) and (max-width: 966px){ /*Tablettes */
+@media(max-width: 768px){ /*Tablettes */
     
-}
-
-body {
-    /*background-color: #f8ee00;*/
 }
 
 h1 {
@@ -25,7 +21,7 @@ h1 {
 .overlay-image {
     position: relative;
     display: inline-block;
-    padding-right: 25px;
+    margin-right: 25px;
 }
 
 .overlay-image .image {
