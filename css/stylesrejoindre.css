@@ -26,6 +26,9 @@ main{
 	text-align:center;
 	font-size : 150%;
 }
+a > h1{
+	color: blue;
+}
 /*
 .block
 {
