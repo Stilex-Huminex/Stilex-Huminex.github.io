@@ -87,12 +87,13 @@ div.corps div h4{
     margin-top: 0%;
     margin-bottom:7mm;
     padding: 15px 10px 15px 10px;
-    display: none;
+    display: block;
+    visibility: hidden;
     position: relative;
 }
 
 div.corps div h2:hover+div h4{
-    display: block;
+    visibility: visible;
 }
 
 div.corps div h2:hover, div.corps div div h4:hover{
