@@ -17,7 +17,7 @@ h1
 .block2
 {
 	display:inline-block;
-	width : 30%;
+	
 	text-align:center;
 } 
 .block3
@@ -31,3 +31,4 @@ h1
 textarea {
 	width: 100%;
 }
+
