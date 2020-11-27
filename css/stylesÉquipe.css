@@ -4,7 +4,7 @@
 }
 
 @media(max-width: 480px) {
-    footer {display: none;}
+    html footer {display: none;}
 }
 
 @media(max-width: 768px){ /*Tablettes */

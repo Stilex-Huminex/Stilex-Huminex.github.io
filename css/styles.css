@@ -1,3 +1,37 @@
+@media(max-width:768px){
+    html header {
+        flex-direction: column;
+    }
+    html nav a {
+        font-size: 3.25vw;
+    }
+    html #logo{
+        width: 25%;
+        margin: 10px;
+        min-width: 190px;
+    }
+}
+@media(max-width:480px){
+    html #burger {
+        display: inline;
+    }
+    html nav {
+        display: none;
+    }
+}
+/*@media(max-width:168px){
+    body *{display: none;}
+    aside {display: inline;}
+    .facts {display: inline;}
+    .facts *{display: inline;}
+}
+@media(min-width:768px){
+    .burger {display:none;}
+}*/
+
+html {
+    height: 100%;
+}
 header{
     height: auto;
     width: 100vw;
@@ -6,7 +40,14 @@ header{
     flex-direction: row;
     justify-content: center;
 }
+main {
+    flex: 1 0 auto;
+}
+footer{
+    flex-shrink: 0;
+}
 nav {
+    margin: 20px;
     height: 3vw;
     display: flex;
     align-items: stretch;
@@ -54,6 +95,7 @@ div:hover > .submenu {
     display: inline;  
 }
 body{
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -66,4 +108,8 @@ body{
 }
 #logo{
     width: 12%;
+}
+#burger{
+    display: none;
+    width: 75px;
 }
