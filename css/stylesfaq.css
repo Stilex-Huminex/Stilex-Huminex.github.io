@@ -3,38 +3,67 @@
     src: url(asset/SLANT.TTF);
 }
 
+main {
+    width: 1000px;
+    font-family: Arial;
+}
 
-article h1 {
+div.questions {
+    display:flex
+    border-bottom: 3px solid white;
+}
+
+div.encadre article {
+    border: 1mm ridge black;
+    background-color: rgba(255,255,255, 0.5);
+    padding: 15px 10px 15px 10px;
+    margin-top: 20px;
+    display: flex;
+}
+
+div.encadre article h1 {
     font-family: "SLANT";
 }
 
-article.encadre {
-    border: 1mm ridge black;
-    background-color: rgba(255,255,255, 0.5);
-    padding-top: 20px;
-    padding-left: 30px;
-    margin-top: 20px;
-    display: flex;
-}
-
-article.corps {
-    display: flex;
+div.corps article {
+    display: block;
     margin-top: 20px;
 }
 
-article.corps h2 {
+div.corps article h2 {
     border: 1mm ridge black;
     background-color: rgba(255,255,255, 0.5);
-    padding-top: 20px;
+    padding: 15px 10px 15px 10px;
     margin-top: 10px;
-    display: flex;
+    display: block;
+    position:static;
+    font-family: "SLANT";
 }
 
-article h1#entete { 
-    text-align: center;
+div.corps article h4 {
+    border: 1mm ridge black;
+    border-top: 0mm;
+    background-color: rgba(255,255,255, 0.5);
+    padding: 15px 10px 15px 10px;
+    display: block;
+    position: relative;
 }
+
+
 div a#Q {
     border-bottom: 2px ridge goldenrod;
     border-spacing: 50px;
     display: inline;
+}
+
+a:visited#Q{
+    color: blueviolet;
+}
+
+a:hover#Q{
+    color: green;
+}
+
+ul li{
+    color: black;
 }
