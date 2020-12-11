@@ -26,9 +26,8 @@ main{
 	text-align:center;
 	font-size : 150%;
 }
-a > h1{
-	color: blue;
-}
+
+
 /*
 .block
 {
@@ -51,6 +50,13 @@ a > h1{
 */
 .oui{
 	text-align:center;
+	font-size: 150%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	text-decoration: none;
+	color:blue;
+	
+
 }
 .oui:hover
 {
