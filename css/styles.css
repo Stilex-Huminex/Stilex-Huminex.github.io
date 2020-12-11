@@ -1,34 +1,7 @@
-@media(max-width:768px){
-    html header {
-        flex-direction: column;
-    }
-    html nav a {
-        font-size: 3.25vw;
-    }
-    html #logo{
-        width: 25%;
-        margin: 10px;
-        min-width: 190px;
-    }
+@font-face{
+    font-family: "nasalization-rg";
+    src: url(asset/nasalization-rg.ttf);
 }
-@media(max-width:480px){
-    html #burger {
-        display: inline;
-    }
-    html nav {
-        display: none;
-    }
-}
-/*@media(max-width:168px){
-    body *{display: none;}
-    aside {display: inline;}
-    .facts {display: inline;}
-    .facts *{display: inline;}
-}
-@media(min-width:768px){
-    .burger {display:none;}
-}*/
-
 html {
     height: 100%;
 }
@@ -55,7 +28,7 @@ footer{
     flex-shrink: 0;
 }
 nav {
-    margin: 20px;
+    margin: 20px 20px 20px 0px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -65,17 +38,17 @@ nav {
 nav > div {
     width: 14%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     position: relative;
 }
 nav a {
     width: 80%;
     text-align: center;
     display: flex;
-    justify-content: center;
-    font-size: 2.5vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    justify-content: space-evenly;
+    font-size: 2vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     filter: drop-shadow(2px 2px 4px #000000);
 }
 footer a{
@@ -85,14 +58,17 @@ footer a{
 }
 a {
     color: #c7ffdf;
+    font-family: "nasalization-rg";
 }
 a:hover {
     color: #fdffbe;
 }
 .submenu {
+    z-index: 0;
+    pointer-events: auto;
     display: none;
     position: absolute;
-    top: 3vw;
+    top: 0.1vw;
     left: 0px;
     width: 100%;
     margin: auto;
@@ -100,8 +76,12 @@ a:hover {
 .submenu a{
     margin: auto;
 }
+#rejoindre{
+    z-index: 30;
+}
 div:hover > .submenu {
-    display: inline;  
+    display: inline;
+    padding-top: 2.5vw;
 }
 body{
     height: 99%;
@@ -115,10 +95,21 @@ body{
     background-attachment: fixed;
     background-size:cover;
 }
+#accueil{
+    width: 13vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px 0px 25px 25px;
+}
 #logo{
-    width: 12%;
-    margin: 25px;
-    filter: drop-shadow(2px 2px 4px #000000);
+    max-width: 100%;
+    background-image: url(asset/Logo1.png);
+    filter:  invert(99%) sepia(56%) saturate(642%) hue-rotate(66deg) brightness(100%) contrast(102%) drop-shadow(2px 2px 4px #000000);
+    object-fit: contain;
+}
+#logo:hover{
+    filter:  invert(98%) sepia(75%) saturate(743%) hue-rotate(322deg) brightness(110%) contrast(102%) drop-shadow(2px 2px 4px #000000);
 }
 #burger{
     display: none;
@@ -134,3 +125,45 @@ body{
     background-color: #ffffffbb;
     text-align: center;
 }
+
+
+@media(max-width:768px){
+    header {
+        flex-direction: column;
+    }
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav a {
+        font-size: 3.25vw;
+    }
+    nav div {
+        min-width: 145px;
+    }
+    #logo{
+        width: 100%;
+        object-fit: contain;
+    }
+    #accueil{
+        min-width: 190px;
+        width: 25%;
+    }
+}
+@media(max-width:480px){
+    #burger {
+        display: inline;
+    }
+    nav {
+        display: none;
+    }
+}
+/*@media(max-width:168px){
+    body *{display: none;}
+    aside {display: inline;}
+    .facts {display: inline;}
+    .facts *{display: inline;}
+}
+@media(min-width:768px){
+    .burger {display:none;}
+}*/
