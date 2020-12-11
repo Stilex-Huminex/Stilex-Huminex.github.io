@@ -1,6 +1,7 @@
 h1
 {
 	border: solid black;
+	background: linear-gradient(90deg,#ff8a00,#e52e71);
 
 }
 main{
