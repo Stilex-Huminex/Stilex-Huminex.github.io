@@ -44,23 +44,22 @@ h1 {
     position: relative;
     display: inline-block;
     padding-left: 50px;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .overlay-image .image {
     display: inline;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
 }
 
 .overlay-image .hover {
     position: absolute;
-    top: 10px;
-    right: 10px;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0,0,0,0.5);
+    box-shadow: -1px 2px 70px 3px rgba(236, 8, 236, 0.7);
 }
    
 .overlay-image:hover .hover {
@@ -69,8 +68,6 @@ h1 {
 
 .overlay-image .hover2 {
     position: absolute;
-    top: 10px;
-    right: 10px;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0,0,0,0.5);
@@ -84,11 +81,22 @@ h1 {
     display: block;
     position: absolute;
     float: left;
-    box-shadow: -1px 2px 70px 3px rgba(236, 8, 236, 0.7);
+
     line-height: 1px;
 }
 
-.image2, .image3, .overlay-image .hover, .overlay-image .hover2{
-    height: 480px;
-    width: 480px;
+.image2, .image3, .hover, .hover2{
+    height: 280px;
+    width: 280.5px;
+}
+
+.hover, .hover2{
+    top: 11px;
+    right: 9.6px;
+}
+
+/* Layout */
+.A{
+    top: 100px;
+    right: 900px;
 }
