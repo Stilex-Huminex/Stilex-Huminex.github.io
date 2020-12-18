@@ -117,9 +117,8 @@ body{
 #logo:hover{
     filter:  invert(98%) sepia(75%) saturate(743%) hue-rotate(322deg) brightness(110%) contrast(102%) drop-shadow(2px 2px 4px #000000);
 }
-#burger{
+.burger{
     display: none;
-    width: 75px;
 }
 .mainTexte {
     background-clip: padding-box;
@@ -165,8 +164,25 @@ body{
     }
 }
 @media(max-width:480px){
-    #burger {
-        display: inline;
+    .burger #menu2{
+        display: none;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burger img {
+        width: 75px;
+    }
+    .burger:hover #menu2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu2 div a{
+        text-align: center;
+        font-size: 50px;
     }
     nav {
         display: none;
