@@ -2,20 +2,13 @@
     background: linear-gradient(0deg, #00c5ff, #f200ff, #00ff91, #ffa154);
     background-size: 800% 800%;
 
-    animation: Question 4s ease infinite;
+    animation: Fade 4s ease infinite;
 }
 
-@keyframes Question {
+@keyframes Fade {
     0%{background-position:50% 0%}
     50%{background-position:50% 100%}
     100%{background-position:50% 0%}
-}
-
-
-
-@font-face {
-    font-family: "SLANT";
-    src: url(asset/SLANT.TTF);
 }
 
 main {
@@ -24,16 +17,15 @@ main {
     font-family: Arial;
 }
 
-
-div.preface {
-    font-family: "SLANT";
-    font-size: 35px;
-    text-align: justify;
-}
-
 div.questions {
     display:flex;
-    border-bottom: 3px solid white;
+    border-bottom: 0.15vw solid white;
+}
+
+div.reponses {
+    margin-top: 1vw;
+    display:flex;
+    flex-direction: column;
 }
 
 div.encadre {
@@ -41,54 +33,58 @@ div.encadre {
 }
 
 div.encadre article {
-    border: 1mm ridge black;
+    border: 5px ridge black;
     background-color: rgba(255,255,255, 0.5);
-    padding: 15px 10px 15px 10px;
-    margin-top: 20px;
+    padding: 0.8vw 0.5vw 0.8vw 0.5vw;
+    margin-top: 1.05px;
     display: flex;
 }
 
 div.encadre article h1 {
-    font-family: "SLANT";
+    font-family: "Exo-Regular";
+}
+
+div.encadre article h1.entete {
+    font-family: "Exo-Regular";
 }
 
 div.corps article {
-    margin-top: 20px;
+    margin-top: 1.04vw;
     position: static;
     display:block;
 }
 
 div.corps article div h2 {
-    border: 1mm ridge black;
+    border: 5px ridge black;
     background-color: rgba(255,255,255, 0.5);
-    padding: 15px 10px 15px 10px;
-    margin-top: 10px;
+    padding: 0.8vw 0.5vw 0.8vw 0.5vw;
+    margin-top: 1.05vw;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center ;
     position:static;
-    font-family: "SLANT";
+    font-family: "Exo-Regular";
 }
 
 
 div.corps>article>div {
-    margin-bottom:7mm;
+    margin-bottom:1.5vw;
 }
 
 div.corps>article>div div{
-    margin-top:-20px;
+    margin-top:-1.05vw;
 }
 
 div.corps div h4{
-    border: 1mm ridge black;
-    border-top: 0mm;
+    border: 5px ridge black;
+    border-top: 0vw;
     background-color: rgba(255, 240, 152, 0.5);
-    margin-top: 0%;
-    margin-bottom:7mm;
-    padding: 15px 10px 15px 10px;
-    display: block;
-    visibility: collapse;
+    margin-top: 0vw;
+    margin-bottom:1.4vw;
+    padding: 0.8vw 0.5vw 0.8vw 0.5vw;
+    display: inline;
+    visibility: hidden;
     position: relative;
 }
 
@@ -96,10 +92,11 @@ div.corps div h2:hover+div h4,div.corps div h2+div h4:hover{
     visibility: visible;
 }
 
-div.corps div:hover h2:hover,div.corps div:hover h2+div h4:hover:not(h4){
+div.corps div:hover h2:hover,
+div.corps div:hover h2:hover h4:hover{
     background: linear-gradient(0deg, #00c5ff, #f200ff, #00ff91, #ffa154);
     background-size: 800% 800%;
-    animation: Question 10s ease infinite;
+    animation: Fade 10s ease infinite;
     transition: goldenrod 1s;
     
 }
