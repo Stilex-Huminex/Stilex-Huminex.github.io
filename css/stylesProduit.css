@@ -28,6 +28,35 @@ article >fieldset >div >div {text-align:justify;}
 fieldset > ul{display:flex;}
 ul >fieldset{display:inline;}
 
+.HolyGrail {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.HolyGrail-body {
+	display: flex;
+	flex: 1;
+}
+
+.HolyGrail-content {
+	flex: 1;
+	background-color: magenta;
+}
+  
+.HolyGrail-nav, .HolyGrail-ads {
+	/* 12em is the width of the columns */
+	flex: 0 0 12em;
+	background-color: blue;
+}
+  
+.HolyGrail-nav {
+	/* put the nav on the left */
+	order: -1;
+}
+
+
+
 @media(max-width:480px){ /*petit*/ 
 	article{display:flex; flex-direction:column;}
 	fieldset > img{width:100px; height:100px;}

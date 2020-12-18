@@ -97,7 +97,7 @@ a:hover {
 .submenu a{
     margin: auto;
 }
-#rejoindre{
+.rejoindre{
     z-index: 30;
 }
 div:hover > .submenu {
@@ -144,7 +144,7 @@ body{
     text-align: center;
 }
 .footerTexte{
-    margin-top: 10px;
+    margin: 10px;
     padding: 10px;
     font-size: larger;
     background-color: #ffffffbb;
