@@ -2,6 +2,10 @@
     font-family: "nasalization-rg";
     src: url(asset/nasalization-rg.ttf);
 }
+@font-face{
+    font-family: "Downlink";
+    src: url(asset/Downlink.otf);
+}
 html {
     height: 100%;
 }
@@ -16,6 +20,8 @@ header{
 }
 h1 {
     color: #FFFFFF;
+    font-family: "Downlink";
+    font-size: 50px;
 }
 main {
     flex: 1 0 auto;
@@ -128,6 +134,9 @@ body{
 
 
 @media(max-width:768px){
+    main{
+        width: 95%;
+    }
     header {
         flex-direction: column;
     }
@@ -144,10 +153,15 @@ body{
     #logo{
         width: 100%;
         object-fit: contain;
+        margin: 0px;
     }
     #accueil{
         min-width: 190px;
         width: 25%;
+        margin: 25px;
+    }
+    div:hover > .submenu{
+        padding-top: 3.5vw;
     }
 }
 @media(max-width:480px){
