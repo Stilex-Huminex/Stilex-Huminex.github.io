@@ -88,15 +88,15 @@ div.corps div h4{
     margin-bottom:7mm;
     padding: 15px 10px 15px 10px;
     display: block;
-    visibility: hidden;
+    visibility: collapse;
     position: relative;
 }
 
-div.corps div h2:hover+div h4{
+div.corps div h2:hover+div h4,div.corps div h2+div h4:hover{
     visibility: visible;
 }
 
-div.corps div h2:hover, div.corps div div h4:hover{
+div.corps div:hover h2:hover,div.corps div:hover h2+div h4:hover:not(h4){
     background: linear-gradient(0deg, #00c5ff, #f200ff, #00ff91, #ffa154);
     background-size: 800% 800%;
     animation: Question 10s ease infinite;
@@ -110,17 +110,17 @@ div.corps div h2+div h4:hover{
 }
 
 
-div a#Q {
+div a.Q {
     border-bottom: 2px ridge goldenrod;
     border-spacing: 50px;
     display: inline;
 }
 
-div a:visited#Q{
+div a:visited.Q{
     color: blueviolet;
 }
 
-div a:hover#Q{
+div a:hover.Q{
     color: green;
 }
 

@@ -1,44 +1,40 @@
 body{
 	
-	color:white;
+	color:black;
 	width:100;
 	
 }
-article{
-	padding: 10px 0px;
-	border:5px solid #CCCCCC;
+.mainContent{
+    background-clip: padding-box;
+    border: 30px;
+    padding: 20px;
+    border-style: solid;
+    border-color:  #00e4d55d;
 	text-align:center;
-	background-color:rgba(255, 250, 250, 0.4);
-	
-	
-	
+    background-color: #ffffffbb;
+	display: inline;
 }
 
-article > fieldset {
+fieldset {
 	
 	padding: 10px 0px;
 	border:5px solid black;	
-	text-align:left;
-	width:300px;
+	text-align:center;
+	height: 420px;
+	width:450px;
 	font-size:20px;
 	display:inline;
-	height:180px;
 }
 h1{
 	font-size:50px;
-	
 }
-article > fieldset >div >input
-{
-	float:right;
-}
-select
-{
-	float:right;
+cite{
+	text-align: center;
+	padding: 25px;
 }
 textarea{
-	width:90%;
-	height:100px;
+	resize: inherit;
+	height: 340px;
 }
 .envoyer{
 	width:10%;
@@ -47,7 +43,56 @@ textarea{
     margin-right: auto;
 	height:30px;
 }
-header{
-	font-size:10px;
-	color:pink;
+
+/* --------Input Add-Ons-------- */
+.InputAddOn {
+	position: relative;
+	display: flex;
+	margin: 0em 1.25em;
+	margin-bottom: 1.5em;
+	height: auto;
+}
+fieldset > :nth-child(2){
+	margin-top: 1.5em;
+}
+
+.InputAddOn-field {
+	flex: 1;
+}
+
+.InputAddOn-field:not(:first-child) {
+	border-left: 0;
+}
+
+.InputAddOn-field:not(:last-child) {
+	border-right: 0;
+}
+
+.InputAddOn-item {
+	background-color: rgba(100, 88, 74, 0.1);
+	color: #444444;
+	font: inherit;
+	font-weight: normal;
+}
+
+.InputAddOn-field, .InputAddOn-item {
+	border: 1px solid rgba(58, 50, 43, 0.25);
+	padding: 0.5em 0.75em;
+}
+
+.InputAddOn-field:first-child, .InputAddOn-item:first-child {
+	border-radius: 2px 0 0 2px;
+}
+
+.InputAddOn-field:last-child, .InputAddOn-item:last-child {
+	border-radius: 0 2px 2px 0;
+}
+/* --------Input Add-Ons-------- */
+/* --------Custom Radio-------- */
+.custom-checkmark{
+	border-radius: 2px 0 0 2px;
+	height: 45px;
+	width: 45px;
+	background-color: #eee;
+	margin: 0px;
 }
