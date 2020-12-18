@@ -25,14 +25,14 @@ article >fieldset >div >div {text-align:justify;}
 fieldset > ul{display:flex;}
 ul >fieldset{display:inline;}
 
-@media(max-width:480px){
-	article{display:inline;}
+@media(max-width:480px){ /*petit*/ 
+	article{display:flex; flex-direction:column;}
 	fieldset > img{width:100px; height:100px;}
 	article>fieldset{max-width:100%;}
 
 }
-@media(min-width:480px){
-	article{display:flex;}
+@media(min-width:480px){ /*grand*/
+	article{display:flex; flex-direction:row;}
 	article>fieldset{max-width:50%;min-width:50%;}
 	fieldset > img{width:200px; height:200px;}
 }
