@@ -1,45 +1,19 @@
-/*@media(min-width: 480px) { (Smartphone)
-    html footer {
-        display: none;
-    }
-    .overlay-image{
-        display: inline-block;
-    }
-}
-
-@media(max-width: 480px) { Smartphone
-    .overlay-image {
-        display: block;   
-    }
-}
-
-@media(max-width: 768px){ Tablettes
-    
-}
-
-@media(max-width: 992px){ Ordinateur
-    
-}*/
-
-.main2 {
-    flex: 1 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+body{
+    min-height: 140vh;
 }
 
 .overlay-image {
     position: relative;
     display: inline-block;
     padding-left: 50px;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 15vw;
+    max-height: 15vw;
 }
 
 .overlay-image .image {
     display: inline;
-    width: 300px;
-    height: 300px;
+    width: 15vw;
+    height: 15vw;
 }
 
 .overlay-image .hover {
@@ -69,13 +43,12 @@
     display: block;
     position: absolute;
     float: left;
-
     line-height: 1px;
 }
 
 .image2, .image3, .hover, .hover2{
-    height: 280px;
-    width: 280.5px;
+    height: 14vw;
+    width: 14vw;
 }
 
 .hover, .hover2{
@@ -84,7 +57,53 @@
 }
 
 /* Layout */
-.A{
-    top: 100px;
-    right: 900px;
+@media(max-width: 480px) { /*Smartphone*/
+    .overlay-image {
+        display: block;   
+    }
+}
+
+@media(max-width: 768px){ /*Tablettes*/
+    .A, .B, .C, .D, .E, .F{
+        display: inline
+    }
+    .overlay-image{
+        position: absolute;
+    }
+    .A{
+        right: 42%;
+    }
+    
+    .B{
+        right: 69%;
+        top: 40%;
+    }
+    
+    .C{
+        right: 15%;
+        top: 40%;
+    }
+    
+    .D{
+        right: 60%;
+        bottom: -15%
+    }
+    
+    .E{
+        right: 25%;
+        bottom: -15%    
+    }
+    
+    .F{
+        position: absolute;
+        right: 42.5%;
+        top: 65%;
+    }
+    .overlay-image .image{
+        height: ;
+    }
+}
+
+@media(max-width: 992px){ /*Ordinateur*/
+    
 }
