@@ -26,6 +26,7 @@ h1 {
     color: #FFFFFF;
     font-family: "Downlink";
     font-size: 50px;
+    text-align: center;
 }
 main {
     flex: 1 0 auto;
@@ -97,7 +98,7 @@ a:hover {
 .submenu a{
     margin: auto;
 }
-.rejoindre{
+#rejoindre{
     z-index: 30;
 }
 div:hover > .submenu {
@@ -160,6 +161,9 @@ body{
     }
     header {
         flex-direction: column;
+    }
+    footer{
+        width: 95%;
     }
     nav{
         flex-wrap: wrap;
