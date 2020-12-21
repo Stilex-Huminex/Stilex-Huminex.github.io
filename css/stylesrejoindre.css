@@ -28,6 +28,9 @@ main{
     border-color:  #00e4d55d;
     font-size: larger;
     background-color: #ffffffbb;
+    width : 150%;
+    
+
    
   
    
@@ -113,6 +116,9 @@ h1
     border-color:  #00e4d55d;
     
     background-color: white;
+
+
+
   	
   
    
@@ -142,6 +148,7 @@ h1
     border-color:  #00e4d55d;
     font-size: larger;
     background-color: white;
+
     
   	
   
@@ -153,7 +160,7 @@ h1
 .main {
 	display : flex;
 	justify-content: center;
-	width : 100%;
+	
 	
 }
 
@@ -163,13 +170,13 @@ h1
 {
 	width :100%;
 }
+#dev2
+{
+	width:100%;
+}
 .texte
 {
 	text-align: justify;
  	text-justify: space-around;
 }
 
-.main : first-child{
-	 width: 10px;
-
-}
