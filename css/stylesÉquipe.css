@@ -46,13 +46,13 @@ body{
 }
 
 .image2, .image3, .hover, .hover2{
-    height: 14.2vw;
-    width: 14.2vw;
+    height: 14.1vw;
+    width: 14.1vw;
 }
 
 .hover, .hover2{
-    top: 9px;
-    right: 7.5px;
+    top: 3.5%;
+    right: 3%;
 }
 
 /* Layout */
@@ -108,8 +108,8 @@ body{
         width: 47vw;
     }
     .hover, .hover2{
-        top: 12.5px;
-        right: 11px;
+        top: 3.5%;
+        right: 3%;
     }
 }
 
