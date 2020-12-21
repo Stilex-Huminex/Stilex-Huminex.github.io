@@ -41,7 +41,7 @@
         </header>
 
         <main>
-            <div class="maintext">
+            <div class="mainTexte">
                 <div id="souligne">Preface</div>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac risus mollis, rutrum erat a, tincidunt massa. Pellentesque pharetra sem non facilisis bibendum. Sed dui nibh, egestas et posuere sit amet, vestibulum non libero. In hac habitasse platea dictumst. Duis eu tellus leo. Fusce nisi magna, vehicula eget dignissim non, dictum a lectus. Donec vel quam libero. Suspendisse a ultricies nulla, quis feugiat turpis. In congue, mi vitae egestas vestibulum, velit lacus ornare risus, at volutpat justo nibh quis magna. Aliquam nec sapien quis velit aliquam elementum.</div>
             </div>
@@ -50,52 +50,64 @@
                     <article>
                         <h1 id="entete">Questions</h1>
                         <ul>
-                        <li><div><a class="Q" href="faq.html#Q1">Où acheter la Pile Corticale™️?</a></div></li>
-                        <li><div><a class="Q" href="faq.html#Q2">Est-ce une pratique légale?</a></div></li>
-                        <li><div><a class="Q" href="faq.html#Q3">Ceci est une question 3</a></div></li>
-                        <li><div><a class="Q" href="faq.html#Q4">Ceci est une question 4</a></div></li>
-                        <li><div><a class="Q" href="faq.html#Q5">Ceci est une question 5</a></div></li>
-                        <li><div><a class="Q" href="faq.html#Q6">Ceci est une question 6</a></div></li>
-                        <li><div><a class="Q" href="faq.html#Q7">Ceci est une question 7</a></div></li>
-                        <li><div><a class="Q" href="faq.html#Q8">Ceci est une question 8</a></div></li>
+                        <li><div><a class="Q" href="faq.html#q1">Où acheter la Pile Corticale™️?</a></div></li>
+                        <li><div><a class="Q" href="faq.html#q2">Est-ce une pratique légale?</a></div></li>
+                        <li><div><a class="Q" href="faq.html#q3">Ceci est une question 3</a></div></li>
+                        <li><div><a class="Q" href="faq.html#q4">Ceci est une question 4</a></div></li>
+                        <li><div><a class="Q" href="faq.html#q5">Ceci est une question 5</a></div></li>
+                        <li><div><a class="Q" href="faq.html#q6">Ceci est une question 6</a></div></li>
+                        <li><div><a class="Q" href="faq.html#q7">Ceci est une question 7</a></div></li>
+                        <li><div><a class="Q" href="faq.html#q8">Ceci est une question 8</a></div></li>
                         </ul>
                     </article>
                 </div>
             </div>
 
-            <div class="reponses">         
-                <div class="corps">
-                    <article>
-                    <div>
-                        <div><h2 id="Q1">Ou acheter la Pile Corticale?™️</h2>
-                            <div><h4>Rendez-vous sur la <a href="./produit.html">page produit.</a></h4></div>
-                        </div>   
-                        <div><h2 id="Q2">Est-ce une pratique legale?</h2>
-                            <div><h4>La Pile Corticale™️ est approuvée par le Protectorat.</h4></div>
-                        </div>
-                        <div><h2 id="Q3">Lorem ipsum le troisième</h2>
-                            <div><h4>Ceci est une réponse 3</h4></div>
-                        </div>
-                        <div><h2 id="Q4">Lorem ipsum le quatrième</h2>
-                            <div><h4>Ceci est une réponse 4</h4></div>
-                        </div>     
-                        <div><h2 id="Q5">Lorem ipsum le cinquième</h2>
-                            <div><h4>Ceci est une réponse 5</h4></div>
-                        </div> 
-                        <div><h2 id="Q6">Lorem ipsum le sixième</h2>
-                            <div><h4>Ceci est une réponse 6</h4></div>
-                        </div> 
-                        <div><h2 id="Q7">Lorem ipsum le septième</h2>
-                            <div><h4>Ceci est une réponse 7</h4></div>
-                        </div> 
-                            <div><h2 id="Q8">Lorem ipsum le huitième</h2>
-                            <div><h4>Ceci est une réponse 8</h4></div>
-                        </div>
-                    </div> 
-                    </article>
+            <section class="accordeon">
+                <input type="checkbox" name="collapse" id="q1">
+                <h2 class="question">
+                    <label for="q1">
+                    Où acheter la Pile Corticale?™️
+                    </label>
+                </h2>
+                
+                <div class="reponse">
+                    <p>Rendez-vous sur la <a href="./produit.html">page produit.</a> La Pile Corticale™️ est un produit des usines Stilex Huminex. Seuls des revendeurs agrées vendent des piles officielles.</p>
                 </div>
-            </div>
+            </section>
+            <section class="accordeon">
+                <input type="checkbox" name="collapse" id="q2">
+                <h2 class="question">
+                    <label for="q2">
+                    Vous avez vu comment c'est sexy?
+                    </label>
+                </h2>
+                
+                <div class="reponse">
+                    <p>Sans déconner oh</p>
+                </div>
+            </section>
+            <section class="accordeon">
+                <input type="checkbox" name="collapse" id="q3">
+                <h2 class="question">
+                    <label for="q3">
+                    Click For JS
+                    </label>
+                </h2>
+                
+                <div class="reponse">
+                    <p>Sike, no JS on my goddamn page</p>
+                </div>
+            </section>
+            
             <aside></aside>
         </main>
+        <footer>
+            <div class="footerTexte">
+                <p>Stilex Huminex est une entreprise indépendante qui ne répond en rien des actions du Protectorat.</p>
+                <p>Pour un quelconque retour, veuillez utiliser notre page contact dédiée à cet effet.</p>
+            </div>
+            <a href="index.html#top_page">Retour au début</a>
+        </footer>
     </body>
 </html>
