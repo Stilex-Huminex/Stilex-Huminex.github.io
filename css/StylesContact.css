@@ -1,52 +1,51 @@
-body{
-	
-	color:black;
-	width:100%;
-}
-main {
-	width: 80%;
-}
-.mainContent{
-    background-clip: padding-box;
-    border: 30px;
-    padding: 20px;
-    border-style: solid;
-    border-color:  #00e4d55d;
-	text-align:center;
-    background-color: #ffffffbb;
-	display: inline;
-}
-
 fieldset {
 	padding: 10px 0px;
-	border:5px solid black;	
+	border: 5px solid black;
 	text-align:center;
-	min-height: 420px;
-	width: 28vw;
-	min-width: 395px;
 	font-size:2vh;
 	display:inline;
+}
+#grp1 fieldset {
+	min-height: 420px;
+	flex-basis: 0;
+	flex: 1;
 }
 h1{
 	font-size:50px;
 }
-cite{
-	text-align: center;
-	padding: 25px;
-}
 textarea{
 	resize: inherit;
-	height: 340px;
+	height: 320px;
 }
 .envoyer{
-	width:10%;
+	width:30%;
+	min-width: 100px;
 	display: block;
 	margin-left: auto;
     margin-right: auto;
-	height:30px;
+	height:50px;
+}	
+#grp1{
+	display: flex;
+	width: 100%;
+	margin-bottom: 10px;
+	justify-content: stretch;
+	align-items: stretch;
 }
-p  {
-	margin: 0px 0px 0px 0px;
+#grp2{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: stretch;
+	justify-content: center;
+}
+#grp2 fieldset:last-child{
+	margin: 10px 0px;
+}
+.mainContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* --------Input Add-Ons-------- */
@@ -63,6 +62,8 @@ fieldset > :nth-child(2){
 
 .input-champ {
 	flex: 1;
+	width: auto;
+	min-width: 0px;
 }
 
 .input-champ:not(:first-child) {
@@ -78,6 +79,10 @@ fieldset > :nth-child(2){
 	color: #444444;
 	font: inherit;
 	font-weight: normal;
+}
+.input2 .input-objet{
+	display: inline-flex;
+	align-items: center;
 }
 
 .input-champ, .input-objet {
@@ -101,11 +106,30 @@ fieldset > :nth-child(2){
 	background-color: #eee;
 	margin: 0px;
 }
+.custom-checkmark:checked{
+	background-color: aqua;
+}
 @media(max-width:768px){
-	fieldset{
+	#grp1 fieldset, #grp2 fieldset{
 		min-height: 0px;
+		min-width: 95%;
+		width: 95%;
+		font-size: 2.5vh;
+	}
+	#grp1 {
+		flex-direction: column;
+	}
+	#grp1 fieldset:first-child{
+		margin-bottom: 10px;
+	}
+	textarea{
+		height: 320px;
 	}
 	.input {
 		flex-direction: column;
+	}
+	.custom-checkmark {
+		height: 50.5px;
+		width: 50.5px;
 	}
 }

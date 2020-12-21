@@ -41,75 +41,79 @@
         </header>
 		<main>
 			<h1>Contact</h1>
-			<form class="mainContent" action="./contactDone.html">
+			<form class="mainTexte" action="./contactDone.html">
 				<h3>Merci de nous contacter si vous avez un problème ou des questions !</h3>	
-				<fieldset>
-					<p>Vos Informations:</p>
-					<div class="input">
-						<span class="input-objet">Nom *</span>
-						<input class="input-champ" placeholder= "Entrez votre nom ici" required>
-					</div>
-					<div class="input">
-						<span class="input-objet">Prénom *</span>
-						<input class="input-champ" placeholder= "Entrez votre prénom ici" required>
-					</div>
-					<div class="input">
-						<span class="input-objet">E-mail *</span>
-						<input type="email" class="input-champ" placeholder= "Entrez votre adresse mail ici" required>
-					</div>
-					<div class="input">
-						<span class="input-objet">Code postal</span>
-						<input type="number" class="input-champ" placeholder= "Entrez votre Code Postal ici" min="10000" max="99999">
-					</div>
-					<div class="input">
-						<span class="input-objet">Votre Planète</span>
-						<select name="planet" id="planet" class="input-champ">
-							<option value="ea" selected>Terre</option>
-							<option value="ma">Mars</option>
-							<option value="ha">Le monde d'Harlan</option>
-							<option value="sh">Sharya</option>
-							<option value="au">Autre</option>
-						</select>
-					</div>
-				</fieldset>
+				<div id="grp1">
+					<fieldset>
+						<p>Vos Informations:</p>
+						<div class="input">
+							<span class="input-objet">Nom *</span>
+							<input class="input-champ" placeholder= "Entrez votre nom ici" required>
+						</div>
+						<div class="input">
+							<span class="input-objet">Prénom *</span>
+							<input class="input-champ" placeholder= "Entrez votre prénom ici" required>
+						</div>
+						<div class="input">
+							<span class="input-objet">E-mail *</span>
+							<input type="email" class="input-champ" placeholder= "Entrez votre adresse mail ici" required>
+						</div>
+						<div class="input">
+							<span class="input-objet">Code postal</span>
+							<input type="number" class="input-champ" placeholder= "Entrez votre Code Postal ici" min="10000" max="99999">
+						</div>
+						<div class="input">
+							<span class="input-objet">Votre Planète</span>
+							<select name="planet" id="planet" class="input-champ">
+								<option value="ea" selected>Terre</option>
+								<option value="ma">Mars</option>
+								<option value="ha">Le monde d'Harlan</option>
+								<option value="sh">Sharya</option>
+								<option value="au">Autre</option>
+							</select>
+						</div>
+					</fieldset>
 
-				<fieldset>
-					<p>Par quel moyen nous avez-vous connu?</p>
-					<div class="input2">
-						<input type="checkbox" class="custom-checkmark" >
-						<span class="input-objet">Instagram</span>
-					</div>
-					<div class="input2">
-						<input type="checkbox" class="custom-checkmark" >
-						<span class="input-objet">Twitter</span>
-					</div>
-					<div class="input2">
-						<input type="checkbox" class="custom-checkmark" >
-						<span class="input-objet">Amis</span>
-					</div>
-					<div class="input2">
-						<input type="checkbox" class="custom-checkmark" >
-						<span class="input-objet">Television</span>
-					</div>
-					<div class="input2">
-						<input type="checkbox" class="custom-checkmark" >
-						<span class="input-objet">Autres</span>
-					</div>
-				</fieldset>
-				<fieldset>
-					<p>Date limite de reponse:</p>
-					<div class="input">
-						<span class="input-objet">Jour</span>
-						<input type="date" class="input-champ">
-					</div>
-				</fieldset>
-				<fieldset>
-					<p>Exprimez vous ici</p>
-					<div class="input">
-						<textarea class="input-champ" placeholder="Dites quelque chose !" rows="30" cols="10"></textarea>
-					</div>
-					
-				</fieldset>
+					<fieldset>
+						<p>Par quel moyen nous avez-vous connu?</p>
+						<div class="input2">
+							<input type="checkbox" class="custom-checkmark" >
+							<span class="input-objet">Instagram</span>
+						</div>
+						<div class="input2">
+							<input type="checkbox" class="custom-checkmark" >
+							<span class="input-objet">Twitter</span>
+						</div>
+						<div class="input2">
+							<input type="checkbox" class="custom-checkmark" >
+							<span class="input-objet">Amis</span>
+						</div>
+						<div class="input2">
+							<input type="checkbox" class="custom-checkmark" >
+							<span class="input-objet">Television</span>
+						</div>
+						<div class="input2">
+							<input type="checkbox" class="custom-checkmark" >
+							<span class="input-objet">Autres</span>
+						</div>
+					</fieldset>
+				</div>
+				<div id="grp2">
+					<fieldset>
+						<p>Date limite de reponse:</p>
+						<div class="input">
+							<span class="input-objet">Jour</span>
+							<input type="date" class="input-champ">
+						</div>
+					</fieldset>
+					<fieldset>
+						<p>Exprimez vous ici</p>
+						<div class="input2">
+							<textarea class="input-champ" placeholder="Dites quelque chose !"></textarea>
+						</div>
+						
+					</fieldset>
+				</div>
 				<input class="envoyer" type="submit" value="Envoyer">
 			</form>
 		</main>

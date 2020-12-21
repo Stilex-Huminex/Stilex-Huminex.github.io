@@ -143,6 +143,9 @@ body{
     font-size: larger;
     background-color: #ffffffbb;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .footerTexte{
     margin: 10px;
