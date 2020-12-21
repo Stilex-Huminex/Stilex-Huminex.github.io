@@ -152,7 +152,7 @@ ul li{
 }
 
 .accordeon label:hover {
-    background: linear-gradient(180deg, #00c0b3, #ffffff, #ff8df6);
+    background: linear-gradient(180deg, #bee6e6, #3942c6);
     background-size: 600% 600%;
     animation: Fade 3s ease infinite;
     border-color: black;
@@ -177,7 +177,7 @@ ul li{
 }
 
 .accordeon > input[name="collapse"]:checked ~ .question label{
-    background: linear-gradient(180deg, #00c0b3, #ffffff, #ff8df6);
+    background: linear-gradient(180deg, #bee6e6, #3942c6);
     background-size: 600% 600%;
     animation: Fade 3s ease infinite;
     border-color: black;
