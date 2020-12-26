@@ -28,6 +28,12 @@ h1 {
     font-size: 50px;
     text-align: center;
 }
+
+h3{
+	color: #FFFFFF;
+    font-family: "Downlink";
+    text-align: center;
+}
 main {
     flex: 1 0 auto;
     width: 70%;

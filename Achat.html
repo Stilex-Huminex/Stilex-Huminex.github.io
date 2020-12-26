@@ -2,14 +2,14 @@
 <html>
     <head>
       <meta charset="utf-8">
-      <title>Stilex-Huminex - Produit</title>
+      <title>Stilex-Huminex - Achat</title>
       <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-	  <link rel="stylesheet" type="text/css" href="css/stylesAchat.css"/>
+	  <link rel="stylesheet" type="text/css" href="css/stylesContact.css"/>
       <link rel="icon" type="image/ico" href="images/favicon.ico"/>
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <header id="top_page">
+        <header>
             <a href="./index.html" id="accueil"><img src="images/Logo.png" alt="Logo" id="logo"></a>
             <nav>
                 <div><a href="./index.html">Accueil</a></div>
@@ -26,58 +26,97 @@
                     </div>
                 </div>
             </nav>
-            <img src="images/burger.png" alt="burger" id="burger">
+            <div class="burger">
+                <img src="images/burger.png" alt="burger">
+                <div id="menu2">
+                    <div><a href="./index.html">Accueil</a></div>
+                    <div><a href="./produit.html">Produit</a></div>
+                    <div><a href="./contact.html">Contact</a></div>
+                    <div><a href="./presse.html">Presse</a></div>
+                    <div><a href="./equipe.html">Equipe</a></div>
+                    <div><a href="./faq.html">FAQ</a></div>
+                    <div><a href="./rejoindre.html">Rejoindre</a></div>
+               </div>
+              </div>
         </header>
-		<article>
-			<div><h1>Achat</h1></div>
-			<div><h3>Prix: 89 999 999.99 crd</h3></div>
-			<fieldset>
-				<div><cite>Vos Informations:</cite></div>
-				<br>
-				<div><label for="surname">NOM*</label>
-					<input id="surname" name="uname" type="text" placeholder= "Entrez votre nom ici" required></div>
-				<div><label for="name">PRENOM*</label>
-					<input id="name" name="name" type="text" placeholder= "Entrez votre prenom ici" required></div>
-				<div><label for="mail">Adresse@mail*</label>
-					<input id="mail" name="mail" type="email" placeholder= "Entrez votre mail" required></div>
-				<div><label for="postal">Code Postal*</label>
-					<input id="postal" name="postal" type="text" placeholder= "00000" required maxlength="5"></div>
-				<div><label for="mail">Adresse Livraison*</label>
-					<input id="livraison" name="livraison" type="text" placeholder= "Entrez votre Adresse" required></div>
-					
-				<label for="pays">Votre Pays</label>
-				<select name="pays" id="pays">
-					<option value="fr" selected>France</option>
-					<option value="usa" >USA</option>
-					<option value="ch">Chine</option>
-					<option value="vt">Allemagne</option>
-					<option value="vt">Espagne</option>
-				</select>
-				
-		
-		
-			</fieldset>
-			<fieldset>
-				<div><cite>Coordonnées bancaires</cite></div>
-				<br>
-				<div><input type="radio" id="visa" name="v" value="with">
-				<label for="visa">Visa</label></div>
-				<div><input type="radio" id="amex" name="v" value="with">
-				<label for="amex">AmEx</label></div>
-				<div><input type="radio" id="master" name="v" value="with">
-				<label for="Mastercard">MasterCard</label></div>
-				<div><label for="num">Numero*</label>
-				<input type="password" id="carte" name="num" placeholder= "0000 0000 0000 0000"required maxlength="16" pattern="[0-9]"></div>
-				<div><label for="num">Securite*</label>
-				<input type="password" id="carte" name="num" placeholder= "000"required  maxlength="3" pattern="[0-9]"></div>
-				<div><label for="Peremption">Peremption*</label>
-				<input type="date" id="reponse" name="reponse"required></div>
-				
-		
-		
-			</fieldset>
-		</article>
-		<input class="envoyer" type="submit" value="ACHETER">
+		<main>
+			<h1>Achat</h1>
+			<h3>Prix: 89 999 999.99 crd</h3>
+			<form class="mainTexte" action="./achatDone.html">
+				<div id="grp1">
+					<fieldset>
+						<p>Vos Informations:</p>
+						<div class="input">
+							<span class="input-objet">Nom*</span>
+							<input class="input-champ" placeholder= "Entrez votre nom ici" required>
+						</div>
+						<div class="input">
+							<span class="input-objet">Prénom*</span>
+							<input class="input-champ" placeholder= "Entrez votre prénom ici" required>
+						</div>
+						<div class="input">
+							<span class="input-objet">E-mail*</span>
+							<input type="email" class="input-champ" placeholder= "Entrez votre adresse mail ici" required>
+						</div>
+						<div class="input">
+							<span class="input-objet">Code postal</span>
+							<input type="number" class="input-champ" placeholder= "Entrez votre Code Postal ici" min="1000" max="99999" required>
+						</div>
+						<div class="input">
+							<span class="input-objet">Adresse Livraison*</span>
+							<input type="text" class="input-champ" placeholder= "Entrez votre Adresse" required>
+						</div>							
+						<div class="input">
+							<span class="input-objet">Votre Planète</span>
+							<select name="planet" id="planet" class="input-champ">
+								<option value="ea" selected>Terre</option>
+								<option value="ma">Mars</option>
+								<option value="ha">Le monde d'Harlan</option>
+								<option value="sh">Sharya</option>
+								<option value="au">Autre</option>
+							</select>
+						</div>
+					</fieldset>
+					<fieldset>
+						<p>Vos coordonnées bancaires</p>
+						<div class="input2">
+							<input type="radio" class="custom-checkmark" name="radio">
+							<span class="input-objet">Visa</span>
+						</div>
+						<div class="input2">
+							<input type="radio" class="custom-checkmark" name="radio">
+							<span class="input-objet">AmEx</span>
+						</div>
+						<div class="input2">
+							<input type="radio" class="custom-checkmark" name="radio">
+							<span class="input-objet">MasterCard</span>
+						</div>
+						<div class="input">
+							<span class="input-objet">Numéro*</span>
+							<input type="text" class="input-champ" placeholder= "Entrez votre code à 16 chiffres" pattern="[0-9]{16}" required>
+						</div>
+						<div class="input">
+							<span class="input-objet">Sécurité*</span>
+							<input type="text" class="input-champ" placeholder= "Entrez votre code secret" pattern="[0-9]{3}" required>
+						</div>
+						<div class="input">
+							<span class="input-objet">Péremption*</span>
+							<input type="date" class="input-champ" required>
+						</div>
+					</fieldset>
+				</div>
+				<input class="envoyer" type="submit" value="ACHETER">
+			</form>
+		</main>
+
+
+        <footer>
+            <div class="footerTexte">
+                <p>Stilex Huminex est une entreprise indépendante qui ne répond en rien des actions du Protectorat.</p>
+                <p>Pour un quelconque retour, veuillez utiliser notre page contact dédiée à cet effet.</p>
+            </div>
+            <a href="contact.html#top_page">Retour au début</a>
+        </footer>
 
 
 </html>
