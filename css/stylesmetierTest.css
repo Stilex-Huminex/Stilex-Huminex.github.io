@@ -1,0 +1,11 @@
+main 
+{
+	align-items : center;
+	border: 5px blue solid;
+}
+main > form > .block1
+{
+	
+	width: 50%;
+	border: 5px red solid;
+}

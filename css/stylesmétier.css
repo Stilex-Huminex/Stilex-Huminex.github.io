@@ -5,21 +5,33 @@ h1
 
 }
 main{
-	width:100%;
+	
 	display:flex;
 	flex-direction: column;
 	align-items:center;
+
 }
+
 form{
 	
 	display:flex;
 	flex-direction: column;
 	align-items : center;
 }
-article > .block1
+
+article 
+{
+	display:flex;
+	flex-direction: column;
+}
+aside
+{
+	display:flex;
+}
+.block1
 {
 	
-	
+	width: 50%;
 	background-color: rgba(255,255,255, 0.5);
 	text-align:center;
 	border-radius : 10px;
@@ -38,7 +50,7 @@ article > .block1
 }
 .all
 {
-	
+	height: auto;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -103,7 +115,8 @@ textarea {
 	
 	display : flex;
 	flex-direction: column;
-
+	width: auto;
+	height: auto;
 
 	align-items:center;
 	font-size:150%;
