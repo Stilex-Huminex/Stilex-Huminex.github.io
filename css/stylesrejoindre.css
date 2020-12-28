@@ -12,7 +12,7 @@ main{
 
 	margin-top: 5%;
 	margin-bottom: 10%;
-	
+	height: 900px;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -29,8 +29,7 @@ main{
     border-color:  #00e4d55d;
     
     background-color: #ffffffbb;
-    
-    
+   
 
    
   
@@ -39,9 +38,9 @@ main{
 
 }
 .b1{
-	display: inline;
+	display: block;
 	text-align:center;
-	font-size : 150%;
+	font-size : 100%;
 }
 
 
@@ -56,6 +55,8 @@ h1
 }
 .oui > a
 {
+	display:block;
+	width:550px;
 	text-decoration: none;
 	color : blue;
 }
@@ -99,7 +100,7 @@ h1
 	height: auto;
 	margin-left:auto;
 	margin-right: auto;
-	margin-top: 8%;
+	
 	margin-bottom: 10%;
 	
 	display : flex;
@@ -136,7 +137,7 @@ h1
 	height: auto;
 	margin-left:auto;
 	margin-right: auto;
-	margin-top: 8%;
+	margin-top: 110%;
 	margin-bottom: 10%;
 	margin left: 10%;
 	display : flex;
@@ -171,7 +172,7 @@ h1
 	display : flex;
 	justify-content: center;
 	
-	flex-direction: row-reverse;
+	flex-direction: row;
 	width:70%;
 	
 	
@@ -191,8 +192,10 @@ h1
 }
 .texte
 {
+	display:block;
 	text-align: justify;
  	text-justify: space-around;
+ 	font-size: 80%;
 }
 
 aside
@@ -202,4 +205,10 @@ aside
 article
 {
 	flex-grow: 2;
+}
+
+.nom-metier
+{
+	color : red;
+	font-size: 100%;
 }
