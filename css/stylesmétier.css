@@ -7,18 +7,18 @@ h1
 main{
 	width:100%;
 	display:flex;
-	flex-direction : column;
+	flex-direction: column;
 	align-items:center;
 }
 form{
-	width: 100%;
+	
 	display:flex;
 	flex-direction: column;
 	align-items : center;
 }
-form > .block1
+article > .block1
 {
-	width:40%;
+	
 	
 	background-color: rgba(255,255,255, 0.5);
 	text-align:center;
@@ -36,9 +36,9 @@ form > .block1
     background-color: #ffffffbb;
 
 }
-form > .all
+.all
 {
-	width: 50%;
+	
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -84,7 +84,7 @@ form > .all
 }
 .bouton>input
 {
-	width: 50%;
+	
 	font-size : 150%;
 	margin-top : 5%;
 	margin-bottom: 2%;
@@ -97,3 +97,27 @@ textarea {
 	width: 100%;
 }
 
+.block-gauche{
+	margin-top: 8%;
+	margin-bottom: 10%;
+	
+	display : flex;
+	flex-direction: column;
+
+
+	align-items:center;
+	font-size:150%;
+	background-color: rgba(255,255,255, 0.7);
+	border-radius :10px;
+
+	background-clip: padding-box;
+    border: 30px;
+    padding: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    font-size : larger;
+    border-color:  #00e4d55d;
+    
+    background-color: white;
+    flex-grow :1;
+}
