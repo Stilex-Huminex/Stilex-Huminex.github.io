@@ -89,6 +89,9 @@ a {
     color: #c7ffdf;
     font-family: "nasalization-rg";
 }
+p > a{
+    font-family: "Exo-Regular";
+}
 a:hover {
     color: #fdffbe;
 }
@@ -141,6 +144,12 @@ body{
 .burger{
     display: none;
 }
+.titre{
+    width: 90%;
+    font-size: xx-large;
+    text-align: left;
+    font-weight: bold;
+}
 .mainTexte {
     background-clip: padding-box;
     border: 30px;
@@ -149,7 +158,7 @@ body{
     border-color:  #00e4d55d;
     font-size: larger;
     background-color: #ffffffbb;
-    text-align: center;
+    text-align: justify;
     display: flex;
     align-items: center;
     flex-direction: column;
