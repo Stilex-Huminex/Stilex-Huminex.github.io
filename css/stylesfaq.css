@@ -161,7 +161,7 @@ ul li{
 }
 
 .accordeon > input[name="collapse"]:checked ~ .reponse {
-    max-height: 10vw;
+    max-height: 100vh;
     transition: max-height 0.5s;
 }
 
