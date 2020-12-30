@@ -69,12 +69,9 @@ div.encadre article {
     display: flex;
 }
 
-div.encadre article h1 {
+h1.entete {
     font-family: "Exo-Regular";
-}
-
-div.encadre article h1.entete {
-    font-family: "Exo-Regular";
+    font-size: large;
 }
 
 div a.Q {
@@ -100,7 +97,7 @@ ul li{
 }
 
 
-/*-----Collapsible sa mère-----*/
+/*-----Collapsible-----*/
 
 .accordeon > input[name="collapse"] {
     display: none;
@@ -157,19 +154,26 @@ ul li{
     background: linear-gradient(180deg, #bee6e6, #3942c6);
     background-size: 600% 600%;
     animation: Fade 3s ease infinite;
-    border-color: black;
+    border: black;
+    border-style: solid;
 }
 
 .accordeon > input[name="collapse"]:checked ~ .reponse {
     max-height: 100vh;
-    transition: max-height 0.5s;
+    transition: max-height 0.3s;
+    border: black;
+    border-style: solid;
+    border-top: 0;
+
+}
+
+.accordeon .question {
+    margin-bottom: 0;
 }
 
 div.reponse {
-    margin-top: -1.445vw;
-    border-style: solid;
-    border-color: black;
-    border-top: 0;
+    margin-top: 0;
+    border: 0;
     background-color: #ffffffbb;
 }
 
