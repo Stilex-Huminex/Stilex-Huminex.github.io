@@ -234,6 +234,17 @@ body{
     nav {
         display: none;
     }
+    .titre{
+        font-size: larger;
+    }
+    .mainTexte{
+        font-size: large;
+    }
+    footer a{
+        text-align: center;
+        font-size: 30px;
+        filter: drop-shadow(2px 2px 4px #000000);
+    }
 }
 /*@media(max-width:168px){
     body *{display: none;}
