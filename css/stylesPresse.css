@@ -74,10 +74,10 @@ article:nth-child(even) h3{
     order: -1;
 }
 
-main.graal-contenu{
+.graal-contenu{
     margin: 0px 50px;
 }
-article.graal-nav{
+.graal-nav{
     background-clip: padding-box;
     border: 15px;
     padding: 10px;
@@ -86,7 +86,7 @@ article.graal-nav{
     font-size: large;
     background-color: #ffffffbb;
 }
-aside.graal-pub{
+.graal-pub{
     background-clip: padding-box;
     border: 15px;
     padding: 10px;
