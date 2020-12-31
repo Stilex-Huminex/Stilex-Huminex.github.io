@@ -29,22 +29,56 @@
 
 .graal-nav,
 .graal-pub {
-    flex: 0 0 12em;
+	flex: 0 0 12em;
+	max-width: 300px;
 }
 
 .graal-nav {
     order: -1;
 }
 
-main.graal-contenu, 
-aside.graal-pub, 
-article.graal-nav {
-    background-color: #ffffffbb;
+main.graal-contenu{
+    margin: 0px 50px;
+    border: 15px;
+    padding: 10px;
+}
+div.Foire{
+    margin: 0px 50px;
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
     border-style: solid;
-    border-color: black;
+    border-color:  #00e4d55d;
+    background-color: #ffffffbb;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+article.graal-nav{
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
+    border-style: solid;
+    border-color:  #00e4d55d;
+    font-size: large;
+    background-color: #ffffffbb;
+}
+aside.graal-pub{
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
+    border-style: solid;
+    border-color:  #00e4d55d;
+    font-size: large;
+    background-color: #ffffffbb;
 }
 
 /*--Fin Graal--*/
+section{
+    width: 100%;
+}
 
 div.questions {
     display:flex;
@@ -73,19 +107,8 @@ h1.entete {
     font-family: "Exo-Regular";
     font-size: large;
 }
-
-div a.Q {
-    border-bottom: 2px ridge goldenrod;
-    border-spacing: 50px;
-    display: inline;
-}
-
-div a:visited.Q{
-    color: blueviolet;
-}
-
-div a:hover.Q{
-    color: green;
+ul{
+    padding-inline-start: 20px;
 }
 
 ul li{
