@@ -29,22 +29,59 @@
 
 .graal-nav,
 .graal-pub {
-    flex: 0 0 12em;
+	flex: 0 0 12em;
+	max-width: 300px;
 }
 
 .graal-nav {
     order: -1;
 }
+.graal-nav a{
+    filter: drop-shadow(1px 1px 1px #000000);
+}
 
-main.graal-contenu, 
-aside.graal-pub, 
-article.graal-nav {
-    background-color: #ffffffbb;
+main.graal-contenu{
+    margin: 0px 50px;
+    border: 15px;
+    padding: 10px;
+}
+div.Foire{
+    margin: 0px 50px;
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
     border-style: solid;
-    border-color: black;
+    border-color:  #00e4d55d;
+    background-color: #ffffffbb;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+article.graal-nav{
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
+    border-style: solid;
+    border-color:  #00e4d55d;
+    font-size: large;
+    background-color: #ffffffbb;
+}
+aside.graal-pub{
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
+    border-style: solid;
+    border-color:  #00e4d55d;
+    font-size: large;
+    background-color: #ffffffbb;
 }
 
 /*--Fin Graal--*/
+section{
+    width: 100%;
+}
 
 div.questions {
     display:flex;
@@ -69,30 +106,17 @@ div.encadre article {
     display: flex;
 }
 
-div.encadre article h1 {
+h1#entete {
     font-family: "Exo-Regular";
+    font-size: 1.8em;
 }
-
-div.encadre article h1.entete {
-    font-family: "Exo-Regular";
-}
-
-div a.Q {
-    border-bottom: 2px ridge goldenrod;
-    border-spacing: 50px;
-    display: inline;
-}
-
-div a:visited.Q{
-    color: blueviolet;
-}
-
-div a:hover.Q{
-    color: green;
+ul{
+    padding-inline-start: 20px;
 }
 
 ul li{
     color: black;
+    margin: 20px 0px;
 }
 
 #souligne{
@@ -100,7 +124,7 @@ ul li{
 }
 
 
-/*-----Collapsible sa mère-----*/
+/*-----Collapsible-----*/
 
 .accordeon > input[name="collapse"] {
     display: none;
@@ -157,19 +181,26 @@ ul li{
     background: linear-gradient(180deg, #bee6e6, #3942c6);
     background-size: 600% 600%;
     animation: Fade 3s ease infinite;
-    border-color: black;
+    border: black;
+    border-style: solid;
 }
 
 .accordeon > input[name="collapse"]:checked ~ .reponse {
-    max-height: 10vw;
-    transition: max-height 0.5s;
+    max-height: 100vh;
+    transition: max-height 0.3s;
+    border: black;
+    border-style: solid;
+    border-top: 0;
+
+}
+
+.accordeon .question {
+    margin-bottom: 0;
 }
 
 div.reponse {
-    margin-top: -1.445vw;
-    border-style: solid;
-    border-color: black;
-    border-top: 0;
+    margin-top: 0;
+    border: 0;
     background-color: #ffffffbb;
 }
 
@@ -179,14 +210,6 @@ div.reponse>p {
     
 }
 
-div.reponse a{
-    color: blue;
-}
-
-div.reponse a:hover{
-    color: lime;
-}
-
-div.reponse a:visited{
-    color: purple;
+@media(max-width:768px){
+    .graal-nav, .graal-pub {display: none;}
 }

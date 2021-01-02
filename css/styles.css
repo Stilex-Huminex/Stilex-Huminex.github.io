@@ -43,6 +43,9 @@ main {
     font-family: "Exo-Regular";
     font-size: larger;
 }
+main a{
+    filter: drop-shadow(1px 1px 1px #000000);
+}
 footer{
     margin: 25px 0px 25px 0px;
     background-color: #00c0b35d;
@@ -88,6 +91,9 @@ a {
     text-decoration: none;
     color: #c7ffdf;
     font-family: "nasalization-rg";
+}
+p > a{
+    font-family: "Exo-Regular";
 }
 a:hover {
     color: #fdffbe;
@@ -141,6 +147,12 @@ body{
 .burger{
     display: none;
 }
+.titre{
+    width: 90%;
+    font-size: xx-large;
+    text-align: left;
+    font-weight: bold;
+}
 .mainTexte {
     background-clip: padding-box;
     border: 30px;
@@ -149,7 +161,7 @@ body{
     border-color:  #00e4d55d;
     font-size: larger;
     background-color: #ffffffbb;
-    text-align: center;
+    text-align: justify;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -224,6 +236,17 @@ body{
     }
     nav {
         display: none;
+    }
+    .titre{
+        font-size: larger;
+    }
+    .mainTexte{
+        font-size: large;
+    }
+    footer a{
+        text-align: center;
+        font-size: 30px;
+        filter: drop-shadow(2px 2px 4px #000000);
     }
 }
 /*@media(max-width:168px){
