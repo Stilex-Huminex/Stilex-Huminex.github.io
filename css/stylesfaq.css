@@ -106,9 +106,9 @@ div.encadre article {
     display: flex;
 }
 
-h1.entete {
+h1#entete {
     font-family: "Exo-Regular";
-    font-size: large;
+    font-size: 1.8em;
 }
 ul{
     padding-inline-start: 20px;

@@ -16,6 +16,11 @@ ul{
     padding-inline-start: 20px;
 }
 
+ul li{
+    color: black;
+    margin: 20px 0px;
+}
+
 article h3{
     margin: 0;
 }
@@ -85,6 +90,11 @@ aside.graal-pub{
 }
 .graal-nav a{
     filter: drop-shadow(1px 1px 1px #000000);
+}
+
+h1#entete {
+    font-family: "Exo-Regular";
+    font-size: 1.8em;
 }
 
 /*--Fin Graal--*/
