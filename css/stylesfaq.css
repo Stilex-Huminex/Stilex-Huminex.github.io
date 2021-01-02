@@ -206,14 +206,6 @@ div.reponse>p {
     
 }
 
-div.reponse a{
-    color: blue;
-}
-
-div.reponse a:hover{
-    color: lime;
-}
-
-div.reponse a:visited{
-    color: purple;
+@media(max-width:768px){
+    .graal-nav, .graal-pub {display: none;}
 }

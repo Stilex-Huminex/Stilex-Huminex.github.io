@@ -85,3 +85,8 @@ aside.graal-pub{
 }
 
 /*--Fin Graal--*/
+
+
+@media(max-width:768px){
+    .graal-nav, .graal-pub {display: none;}
+}
