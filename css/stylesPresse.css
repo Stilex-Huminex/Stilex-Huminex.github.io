@@ -95,6 +95,9 @@ article:nth-child(even) h3{
     font-size: large;
     background-color: #ffffffbb;
 }
+.graal-nav a{
+    filter: drop-shadow(1px 1px 1px #000000);
+}
 
 
 

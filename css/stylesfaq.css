@@ -36,6 +36,9 @@
 .graal-nav {
     order: -1;
 }
+.graal-nav a{
+    filter: drop-shadow(1px 1px 1px #000000);
+}
 
 main.graal-contenu{
     margin: 0px 50px;
