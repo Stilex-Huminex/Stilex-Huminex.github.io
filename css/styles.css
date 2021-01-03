@@ -110,6 +110,7 @@ a:hover {
 }
 .submenu a{
     margin: auto;
+    filter: drop-shadow(2px 2px 4px #000000);
 }
 #rejoindre{
     z-index: 30;
