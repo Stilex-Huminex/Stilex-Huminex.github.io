@@ -114,30 +114,24 @@ div.encadre article {
 
 h1#entete {
     font-family: "Exo-Regular";
-    font-size: 2.5em;
-    -webkit-text-stroke:black;
-    -webkit-text-stroke-width: 0.1px;
+    font-size: 2em;
+    color: black;
+    padding-bottom: 0.5vw;
+    border-bottom:1mm ridge black;
 }
 
 div#Preface {
-    background-clip: padding-box;
-    border: 15px;
-    padding: 10px;
-    border-style: solid;
-    border-color:  #00e4d55d;
-    font-size: large;
-    background-color: #ffffffbb;
-}
-
-div#Preface>h1{
-    -webkit-text-stroke:black;
-    -webkit-text-stroke-width: 0.1px;
+    padding-bottom: 0.5vw;
+    border-bottom:5px groove white;
+    width: 100%;
 }
 
 div#Preface>p {
     text-align: center;
     font-style: italic;
     font-weight: bold;
+    font-size: larger;
+    color: white;
 }
 
 ul{
