@@ -1,42 +1,11 @@
 .block1 > p
 {
 	border: 5px solid black;
-
 }
-main{
-	width:100%;
-	display:flex;
+.block1{
+	width: 100%;
 }
 
-.bloc-centre{
-
-	margin-top: 5%;
-	margin-bottom: 10%;
-	height: 900px;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	font-size:150%;
-	background-color: rgba(255,255,255, 0.7);
-	border-radius :10px;
-
-	background-clip: padding-box;
-    border: 30px;
-    padding: 20px;
-    padding-right: 30px;
-    padding-left: 30px;
-    border-style: solid;
-    border-color:  #00e4d55d;
-    
-    background-color: #ffffffbb;
-   
-
-   
-  
-   
-
-
-}
 .b1{
 	display: block;
 	text-align:center;
@@ -48,38 +17,17 @@ h1
 {
 	font-size : 200%;
 	text-decoration: none;
-	background: linear-gradient(90deg,#ff8a00,#e52e71);
+	background: linear-gradient(90deg,#00e4d5,#3942c6);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
 }
 .oui > a
 {
-	display:block;
+	display:inline;
 	width:550px;
-	text-decoration: none;
-	color : blue;
 }
-/*
-.block
-{
-	display:flex;
-	flex-direction : row;
-	background-color: rgba(255,255,255, 0.5);
-}
-.block1
-{
-	border: 4mm ridge rgb(250,237,39);
-	display:flex;
-	
-	flex-direction: column;
-	text-align:center;
-	
-	background-color: rgba(255,255,255, 0.5);
-	
-	
-}
-*/
 .oui{
 	text-align:center;
 	font-size: 150%;
@@ -87,108 +35,42 @@ h1
 	margin-bottom: 2%;
 	text-decoration: none;
 	color:blue;
-	
-
 }
 .oui:hover
 {
-	background: linear-gradient(90deg,#ff8a00,#e52e71);
+	background: linear-gradient(90deg,#00e4d5,#3942c6);
 	
 }
-
-.block-gauche{
-	height: auto;
-	margin-left:auto;
-	margin-right: auto;
-	
-	margin-bottom: 10%;
-	
-	display : flex;
-	flex-direction: column;
-
-
-	align-items:center;
+article.mainTexte{
+	display: flex;
+	border-radius :10px;
+	font-size:150%;
+	flex-grow: 2;
+	min-width: 50%;
+}
+aside.mainTexte{
+	display: flex;
 	font-size:150%;
 	background-color: rgba(255,255,255, 0.7);
 	border-radius :10px;
-
-	background-clip: padding-box;
-    border: 30px;
-    padding: 20px;
-    padding-bottom: 20px;
-    border-style: solid;
-    
-    border-color:  #00e4d55d;
-    
-    background-color: white;
-  
-
-
-
-  	
-  
-   
-
-
+	flex-grow: 1;
+	min-width: 25%;
 }
 
-.block-droite{
-	
-	height: auto;
-	margin-left:auto;
-	margin-right: auto;
-	margin-top: 110%;
-	margin-bottom: 10%;
-	margin left: 10%;
-	display : flex;
-	flex-direction: column;
-
-	
-	align-items:center;
-	font-size:150%;
-	justify-content: 1;
-	background-color: rgba(255,255,255, 0.7);
-	border-radius :10px;
-
-	background-clip: padding-box;
-    border: 30px;
-    padding: 20px;
-    padding-bottom: 20px;
-    border-style: solid;
-    border-color:  #00e4d55d;
-    
-    background-color: white;
-    
-   
-    
-  	
-  
-   
-
-
-}
-
-.main {
+main {
 	display : flex;
 	justify-content: center;
 	
 	flex-direction: row;
 	width:70%;
-	
-	
 }
 
 
 
-#dev
+aside img
 {
-	height:  7em;
-	width: 12em;
-}
-#dev2
-{
-	height: 7em;
-	width: 12em;
+	max-width: 100%;
+	object-fit: contain;
 }
 .texte
 {
@@ -198,17 +80,23 @@ h1
  	font-size: 80%;
 }
 
-aside
-{
-	flex-grow: 1;
-}
-article
-{
-	flex-grow: 2;
-}
-
 .nom-metier
 {
 	color : red;
 	font-size: 100%;
+}
+
+@media(max-width:768px){
+	aside.mainTexte {
+		display: none;
+	}
+	h1{
+		font-size : 7vw;
+	}
+	.oui a{
+		font-size : 6vw;
+	}
+	main{
+		width: 95%;
+	}
 }

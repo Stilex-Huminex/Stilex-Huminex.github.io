@@ -29,19 +29,61 @@
 
 .graal-nav,
 .graal-pub {
-    flex: 0 0 12em;
+	flex: 0 0 12em;
+	max-width: 300px;
 }
 
 .graal-nav {
     order: -1;
 }
+.graal-nav a{
+    filter: drop-shadow(1px 1px 1px #000000);
+}
 
-main.graal-contenu, 
-aside.graal-pub, 
-article.graal-nav {
-    background-color: #ffffffbb;
+main.graal-contenu{
+    margin: 0px 50px;
+    border: 15px;
+    padding: 10px;
+}
+section {
+    margin: 0px 50px 20px;
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
     border-style: solid;
-    border-color: black;
+    border-color:  #00e4d55d;
+    background-color: #ffffffbb;
+    text-align: justify;
+    width: 100%;
+}
+
+div.Foire {
+    margin: 0px 50px;
+    padding: 10px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+article.graal-nav{
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
+    border-style: solid;
+    border-color:  #00e4d55d;
+    font-size: large;
+    background-color: #ffffffbb;
+}
+aside.graal-pub{
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
+    border-style: solid;
+    border-color:  #00e4d55d;
+    font-size: large;
+    background-color: #ffffffbb;
 }
 
 /*--Fin Graal--*/
@@ -51,11 +93,12 @@ div.questions {
     border-bottom: 0.15vw solid white;
 }
 
-div.reponses {
-    margin-top: 1vw;
+div.reponse {
+    margin: 1vw 0vw;
     display:flex;
     flex-direction: column;
 }
+
 
 div.encadre {
     margin-bottom: 7mm;
@@ -69,27 +112,35 @@ div.encadre article {
     display: flex;
 }
 
-h1.entete {
+h1#entete {
     font-family: "Exo-Regular";
-    font-size: large;
+    font-size: 2em;
+    color: black;
+    padding-bottom: 0.5vw;
+    border-bottom:1mm ridge black;
 }
 
-div a.Q {
-    border-bottom: 2px ridge goldenrod;
-    border-spacing: 50px;
-    display: inline;
+div#Preface {
+    padding-bottom: 0.5vw;
+    border-bottom:5px groove white;
+    width: 100%;
 }
 
-div a:visited.Q{
-    color: blueviolet;
+div#Preface>p {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: larger;
+    color: white;
 }
 
-div a:hover.Q{
-    color: green;
+ul{
+    padding-inline-start: 20px;
 }
 
 ul li{
     color: black;
+    margin: 20px 0px;
 }
 
 #souligne{
@@ -183,14 +234,6 @@ div.reponse>p {
     
 }
 
-div.reponse a{
-    color: blue;
-}
-
-div.reponse a:hover{
-    color: lime;
-}
-
-div.reponse a:visited{
-    color: purple;
+@media(max-width:768px){
+    .graal-nav, .graal-pub {display: none;}
 }
