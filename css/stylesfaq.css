@@ -66,12 +66,7 @@ div.Foire {
     flex-direction: column;
     width: 100%;
 }
-<<<<<<< Updated upstream
-
-article.graal-nav{
-=======
 .graal-nav{
->>>>>>> Stashed changes
     background-clip: padding-box;
     border: 15px;
     padding: 10px;
@@ -122,12 +117,6 @@ h1#entete {
     color: black;
     padding-bottom: 0.5vw;
     border-bottom:1mm ridge black;
-}
-
-div#Preface {
-    padding-bottom: 0.5vw;
-    border-bottom:5px groove white;
-    width: 100%;
 }
 
 div#Preface>p {
@@ -248,4 +237,32 @@ div.reponse>p {
     }
     label{font-size: large;}
     .reponse p{font-size: medium;}
+    section {
+        background-clip: padding-box;
+        border: 15px;
+        padding: 10px;
+        border-style: none;
+        background-color: #ffffff00;
+        text-align: justify;
+        width: 100%;
+        width: auto;
+        margin:0px 0px 20px;
+    }
+    .Foire{
+        margin: 0px 50px 20px;
+        background-clip: padding-box;
+        border: 15px;
+        padding: 10px;
+        border-style: solid;
+        border-color:  #00e4d55d;
+        background-color: #ffffffbb;
+        text-align: justify;
+        width: 100%;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        margin:0;
+    }
 }
