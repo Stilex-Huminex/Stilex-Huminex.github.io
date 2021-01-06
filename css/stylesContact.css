@@ -82,9 +82,10 @@ fieldset > :nth-child(2){
 	font: inherit;
 	font-weight: normal;
 	display: inline-flex;
-	align-items: center;
 	flex-direction: column;
 	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 .input2 .input-objet{
 	display: inline-flex;
@@ -139,6 +140,9 @@ fieldset > :nth-child(2){
 		width: 50.5px;
 	}
 	.mainTexte{
-		width: auto;
+		width: 70%;
+	}
+	.input-objet{
+		font-size: larger;
 	}
 }

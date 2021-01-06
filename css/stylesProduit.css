@@ -51,26 +51,12 @@ article h3{
     order: -1;
 }
 
-main.graal-contenu{
+.graal-contenu{
     margin: 0px 50px;
     border: 15px;
     padding: 10px;
 }
-div.Foire{
-    margin: 0px 50px;
-    background-clip: padding-box;
-    border: 15px;
-    padding: 10px;
-    border-style: solid;
-    border-color:  #00e4d55d;
-    background-color: #ffffffbb;
-    text-align: justify;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-article.graal-nav{
+.graal-nav{
     background-clip: padding-box;
     border: 15px;
     padding: 10px;
@@ -79,7 +65,7 @@ article.graal-nav{
     font-size: large;
     background-color: #ffffffbb;
 }
-aside.graal-pub{
+.graal-pub{
     background-clip: padding-box;
     border: 15px;
     padding: 10px;
@@ -102,4 +88,8 @@ h1#entete {
 
 @media(max-width:768px){
     .graal-nav, .graal-pub {display: none;}
+    .graal-contenu {margin: 0;}
+    .graal-corps {width: 95%;}
+    main article{width: auto;}
+    h1{font-size: 2em;}
 }

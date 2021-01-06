@@ -40,7 +40,7 @@
     filter: drop-shadow(1px 1px 1px #000000);
 }
 
-main.graal-contenu{
+.graal-contenu{
     margin: 0px 50px;
     border: 15px;
     padding: 10px;
@@ -66,8 +66,12 @@ div.Foire {
     flex-direction: column;
     width: 100%;
 }
+<<<<<<< Updated upstream
 
 article.graal-nav{
+=======
+.graal-nav{
+>>>>>>> Stashed changes
     background-clip: padding-box;
     border: 15px;
     padding: 10px;
@@ -76,7 +80,7 @@ article.graal-nav{
     font-size: large;
     background-color: #ffffffbb;
 }
-aside.graal-pub{
+.graal-pub{
     background-clip: padding-box;
     border: 15px;
     padding: 10px;
@@ -236,4 +240,12 @@ div.reponse>p {
 
 @media(max-width:768px){
     .graal-nav, .graal-pub {display: none;}
+    .graal-contenu {margin: 0;}
+    .graal-corps {width: 95%;}
+    div.Foire{
+        width:auto;
+        margin: 0;
+    }
+    label{font-size: large;}
+    .reponse p{font-size: medium;}
 }

@@ -128,4 +128,11 @@ h1#entete {
 
 @media(max-width:768px){
     .graal-nav, .graal-pub {display: none;}
+    .graal-contenu {margin: 0;}
+    .graal-corps {width: 95%;}
+    main article {
+        width:auto;
+        font-size: large;
+    }
+    blockquote {margin:0;}
 }
