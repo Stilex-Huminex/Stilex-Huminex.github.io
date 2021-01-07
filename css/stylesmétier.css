@@ -32,6 +32,9 @@ article.mainTexte{
 form{
 	width: 100%
 }
+fieldset.F1{
+	width: 70%
+}
 fieldset.F1 div {
 	display:flex;
 	
@@ -45,6 +48,7 @@ fieldset.F1 div{
 	margin : 5px 5px;
 }
 fieldset.F1 input{
+	
 	font-size: 100%;
 }
 
@@ -77,6 +81,7 @@ fieldset.F3 input{
 	height:50px;
 	font-size: 100%;
 	margin-top: 8%;
+
 }	
 
 img {
@@ -85,9 +90,11 @@ img {
 }
 #animation{
 	position : relative;
-	width: 100px;
-	height: 100px;
-	
+	width: 400px;
+	height: 200px;
+
+	background-image:url("images/ingenieur.jpg");
+	background: red;
 	animation: mymove 10s infinite;
 	margin-bottom: 10px;
 }
@@ -99,3 +106,4 @@ img {
   100%{top: 0px; left : -35%;}
   
 }
+

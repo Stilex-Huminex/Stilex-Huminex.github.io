@@ -54,8 +54,8 @@ aside{
 }
 @keyframes mymove {
   0%{top: 0px;}
-  33%{top: 100px;}
-  66%{top: -100px; }
+  33%{top: 5vh;}
+  66%{top: -5vh; }
   100%{top:0px;} 
 }
 
