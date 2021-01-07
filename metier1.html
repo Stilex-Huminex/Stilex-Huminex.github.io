@@ -43,26 +43,20 @@
 			
 		</div>
     		<main>
-	    		<form action="rejoindreDone.html" method="get">
-
-	    		<article>
-	    			
-	    				<h1>Candidature Cortical Engineer</h1> 
-	    			
-	    			
-	    		</article>
-	    		<article>
+	    		<form action="rejoindreDone.html" method="get">   			
+	    		<h1>Candidature Cortical Engineer</h1> 	    				    			
+	    		<article class="mainTexte">
 	    				
 			    		<fieldset class="F1">		   
 								<legend><h2>Informations personnelles</h2></legend>
 								<div>
 									<label for="NomFamille">Nom * : </label>
-									<input id="Nomfamille" name="firstname" type="text" size="56" maxlength="25" required>
+									<input id="Nomfamille" name="firstname" type="text" size="56" maxlength="25"  placeholder= "Entrez votre nom ici" required>
 								</div>
 
 								<div>
-									<label for="Prenom">Prenom * : </label>
-									<input id="Prenom" name="secodnname" type="text" size="50" maxlength="25" required> 
+									<label for="Prenom">Prénom * : </label>
+									<input id="Prenom" name="secodnname" type="text" size="50"  placeholder= "Entrez votre prénom ici" maxlength="25" required> 
 								</div>
 								<div>
 									<label for="homme">Homme</label>
@@ -70,38 +64,40 @@
 
 									<label for="femme">Femme</label>
 									<input type="radio" id="femme" name="sexe" value="femme">
+
+									<label for="Autre">Autre</label>
+									<input type="radio" id="Autre" name="sexe" value="femme">
 								</div>				
 								
 						
 						</fieldset>
 						
 						
-					<div class="block3">
-						<fieldset>
+					
+						<fieldset class="F2">
 							
 							<legend><h2>Écrire votre lettre de motivation</h2></legend>
-							<div>
-								<label for="lettremotivation">Lettre de motivation * :</label>
-								<textarea name="message" id = "lettremotivation" rows="15" cols="50" placeholder="Veuillez écrire votre lettre de motivation" tabindex="15"></textarea>
-							</div>
-						</fieldset>        
-					</div>
-					<div class ="block4">
-						<fieldset>
+							<label for="lettremotivation">Lettre de motivation * :</label>
+							<textarea name="message" id = "lettremotivation" rows="15" cols="50" placeholder="Veuillez écrire votre lettre de motivation" tabindex="15"></textarea>
+
+						</fieldset>     
+
+
+					
+					
+						<fieldset class="F3">
 							<legend><h2>Envovyé nous votre CV </h2></legend>
-							<div>
-								<label for="cv"> Joindre votre CV </label>
-								<input id="cv" name="monCv" type="file">
-							</div>
+							<label for="cv"> Joindre votre CV </label>
+							<input id="cv" name="monCv" type="file" required>
 						</fieldset>
-					</div>
-					<div class ='block5'>
-						<div class='bouton'>
-							<input class="envoyer" type="submit" value="Envoyer">
-						</div>	
-					</div>
-				</div>
-			</div>
+					
+					
+						
+						<input class="envoyer" type="submit" value="Envoyer" size="20">
+						
+					
+				
+			
 				</article>
 			</form>
 
