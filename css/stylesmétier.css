@@ -48,7 +48,7 @@ fieldset.F1 div{
 	margin : 5px 5px;
 }
 fieldset.F1 input{
-	
+
 	font-size: 100%;
 }
 
@@ -84,10 +84,7 @@ fieldset.F3 input{
 
 }	
 
-img {
-	width: 100px;
-	height: 100px;
-}
+
 #animation{
 	position : relative;
 	width: 400px;
