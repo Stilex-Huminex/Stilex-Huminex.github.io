@@ -13,13 +13,12 @@ legend {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-article{
-	display:block;
-	width: 100%;
-	
-}
+
+
+
 article.mainTexte{
-	width:100%;
+	width:75%;
+	margin:auto;
 	background-clip: padding-box;
     border: 30px;
     
@@ -30,7 +29,9 @@ article.mainTexte{
     background-color: #ffffffbb;
 }
 
-
+form{
+	width: 100%
+}
 fieldset.F1 div {
 	display:flex;
 	
