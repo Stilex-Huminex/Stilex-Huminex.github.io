@@ -48,6 +48,17 @@ article.mainTexte{
 	flex-grow: 2;
 	min-width: 50%;
 }
+aside{
+	position : relative;
+	animation: mymove 15s infinite;
+}
+@keyframes mymove {
+  0%{top: 0px;}
+  33%{top: 100px;}
+  66%{top: -100px; }
+  100%{top:0px;} 
+}
+
 aside.mainTexte{
 	display: flex;
 	font-size:150%;

@@ -37,7 +37,7 @@ fieldset.F1 div {
 	
 }
 fieldset.F1 label{
-	font-size: 150%;
+	font-size: 120%;
 	margin: 5px 5px;
 }
 
@@ -45,7 +45,7 @@ fieldset.F1 div{
 	margin : 5px 5px;
 }
 fieldset.F1 input{
-	font-size: 80%;
+	font-size: 100%;
 }
 
 fieldset.F2{
@@ -79,11 +79,15 @@ fieldset.F3 input{
 	margin-top: 8%;
 }	
 
+img {
+	width: 100px;
+	height: 100px;
+}
 #animation{
 	position : relative;
 	width: 100px;
 	height: 100px;
-	background: red;
+	
 	animation: mymove 10s infinite;
 	margin-bottom: 10px;
 }
