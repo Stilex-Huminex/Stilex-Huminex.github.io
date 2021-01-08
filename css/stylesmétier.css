@@ -102,8 +102,8 @@ input[type=radio] { border: 0px; width: 100%; height: 3vw; }
 	width: 400px;
 	height: 200px;
 
-	background-image:url("images/ingenieur.jpg");
-	background: red;
+	/*background-image:url("images/ingenieur.jpg");
+	background: red;*/
 	animation: mymove 10s infinite;
 	margin-bottom: 10px;
 }
