@@ -57,6 +57,10 @@ section {
     width: 100%;
 }
 
+section:last-of-type{
+    margin-top: 20px;
+}
+
 div.Foire {
     margin: 0px 50px;
     padding: 10px;
@@ -66,6 +70,14 @@ div.Foire {
     flex-direction: column;
     width: 100%;
 }
+
+div.Foire span{
+    border: 1mm ridge black;    
+    display: block;
+    background-color: black;
+    width: 100%;
+}
+
 .graal-nav{
     background-clip: padding-box;
     border: 15px;
@@ -74,6 +86,7 @@ div.Foire {
     border-color:  #00e4d55d;
     font-size: large;
     background-color: #ffffffbb;
+    overflow-y: auto;
 }
 .graal-pub{
     background-clip: padding-box;
@@ -116,7 +129,7 @@ h1#entete {
     font-size: 2em;
     color: black;
     padding-bottom: 0.5vw;
-    border-bottom:1mm ridge black;
+    border-bottom: 1mm ridge black;
 }
 
 div#Preface>p {
@@ -134,6 +147,13 @@ ul{
 ul li{
     color: black;
     margin: 20px 0px;
+}
+
+ul li:last-child{
+    border-top: 1mm ridge black;
+    padding-top: 1vw;
+    font-size: larger;
+    font-style: italic; 
 }
 
 #souligne{
@@ -183,6 +203,7 @@ ul li{
     display: inline-block;
     margin-right: 10px;
     font-size: 1em;
+    font-style: normal;
     line-height: 1.556em;
     vertical-align: middle;
     transition: 0.4s;
@@ -226,6 +247,15 @@ div.reponse>p {
     text-align: justify;
     
 }
+
+
+.accordeon:last-of-type label{
+    filter: saturate(0);
+    font-style: italic;
+    border-color: rgb(75, 75, 75);
+}
+
+
 
 @media(max-width:768px){
     .graal-nav, .graal-pub {display: none;}

@@ -12,6 +12,7 @@ main article{
     flex-direction: column;
     width: 100%;
 }
+
 ul{
     padding-inline-start: 20px;
 }
@@ -81,6 +82,22 @@ article h3{
 h1#entete {
     font-family: "Exo-Regular";
     font-size: 1.8em;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+section article:nth-child(2){
+    margin-left: 20px;
+}
+section article:not(:first-child){
+    height: 800px;
+}
+h2{
+    text-align: center;
+}
+h2 p{
+    margin: 0;
 }
 
 /*--Fin Graal--*/
