@@ -1,0 +1,119 @@
+
+
+/*--Le Bon Graal--*/
+
+.graal {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.graal-corps {
+    display: flex;
+    flex: 1;
+}
+
+.graal-contenu {
+    flex: 1;
+}
+
+.graal-nav,
+.graal-pub {
+	flex: 0 0 12em;
+	max-width: 300px;
+}
+
+.graal-nav {
+    order: -1;
+}
+.graal-nav a{
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+.graal-contenu{
+    margin: 0px 50px;
+    border: 15px;
+    padding: 10px;
+}
+.graal-contenu-bis {
+    margin: 0px 50px;
+    padding: 10px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.graal-contenu-bis span{
+    border: 1mm ridge black;    
+    display: block;
+    background-color: black;
+    width: 100%;
+}
+
+.graal-nav{
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
+    border-style: solid;
+    border-color:  #00e4d55d;
+    font-size: large;
+    background-color: #ffffffbb;
+    overflow-y: auto;
+}
+.graal-pub{
+    background-clip: padding-box;
+    border: 15px;
+    padding: 10px;
+    border-style: solid;
+    border-color:  #00e4d55d;
+    font-size: large;
+    background-color: #ffffffbb;
+}
+
+h1#entete {
+    font-family: "Exo-Regular";
+    font-size: 2em;
+    color: black;
+    padding-bottom: 0.5vw;
+    border-bottom: 1mm ridge black;
+}
+
+ul{
+    padding-inline-start: 20px;
+}
+
+ul li{
+    color: black;
+    margin: 20px 0px;
+}
+
+
+
+@media(max-width:768px){
+    .graal-nav, .graal-pub {display: none;}
+    .graal-contenu {margin: 0;}
+    .graal-corps {width: 95%;}
+    .graal-contenu-bis{
+        width:auto;
+        margin: 0;
+        margin: 0px 50px 20px;
+        background-clip: padding-box;
+        border: 15px;
+        padding: 10px;
+        border-style: solid;
+        border-color:  #00e4d55d;
+        background-color: #ffffffbb;
+        text-align: justify;
+        width: 100%;
+    }
+    label{font-size: large;}
+    .reponse p{font-size: medium;}
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        margin:0;
+    }
+}
