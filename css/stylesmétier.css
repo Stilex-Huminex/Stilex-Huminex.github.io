@@ -167,7 +167,7 @@ article textarea:hover {
 		width:100%;
 	}
 	article.mainTexte{
-		width:70%;
+		width:auto;
 
 	}
 	main{
@@ -180,5 +180,10 @@ article textarea:hover {
 	}
 	fieldset.F1,fieldset.F3{
 		border:none;
+	}
+	input[type=radio] { border: 0px; width: 100%; height: 8vw; } 
+	fieldset.F3 .input-objet{
+		width: 50vw;
+		height: 15vw;
 	}
 }
