@@ -110,7 +110,7 @@ input[type=radio] { border: 0px; width: 100%; height: 3vw; }
 	margin-top : 10vh;
 	position : relative;
 	width: 25vw;
-	height: 10vw;
+
 
 	/*background-image:url("images/ingenieur.jpg");
 	background: red;*/
@@ -148,7 +148,7 @@ article textarea:hover {
 
 @media(max-width:768px){
 	h1{
-		font-size: 150%;
+		font-size: 200%;
 	}
 	fieldset.F2 {
 		display: none;
@@ -158,8 +158,13 @@ article textarea:hover {
 
 	}
 	#animation {
-
+		display:flex;
+		justify-content: center;
+		width: 90%;
 		animation : none;
+	}
+	#animation img{
+		width:100%;
 	}
 	article.mainTexte{
 		width:70%;
