@@ -1,6 +1,11 @@
 body{
     min-height: 140vh;
 }
+main{
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
 
 .overlay-image {
     position: absolute;
@@ -48,71 +53,60 @@ body{
 .image2, .image3, .hover, .hover2{
     height: 14.1vw;
     width: 14.1vw;
-}
-
-.hover, .hover2{
     top: 3.5%;
     right: 3%;
 }
 
 /* Layout */
 .A{
+    top: 30%;
     right: 42%;
 }
 
 .B{
     right: 69%;
-    top: 40%;
+    top: 45%;
 }
 
 .C{
     right: 15%;
-    top: 40%;
+    top: 45%;
 }
 
 .D{
     right: 60%;
-    bottom: -15%;
+    top: 85%;
 }
 
 .E{
     right: 25%;
-    bottom: -15%;
-}
-
-.F{
-    position: absolute;
-    right: 39%;
-    top: 65%;
-}
-
-@media(max-width: 480px) { /*Smartphone*/
-
+    top: 85%;
 }
 
 @media(max-width: 768px){ /*Tablettes*/
-    .A, .B, .C, .D, .E, .F{
+    .A, .B, .C, .D, .E{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        max-width: 100vw;
+        max-height: 100vw;
+        width: 70vw;
+        height: 70vw;
+    }
+    h1{
         position: relative;
         top: 0px;
         bottom: 0px;
         right: 0px;
-        max-width: 50vw;
-        max-height: 50vw;
     }
     .overlay-image .image{
-        width: 50vw;
-        height: 50vw;
+        width: 70vw;
+        height: 70vw;
     }
     .image2, .image3, .hover, .hover2{
-        height: 47vw;
-        width: 47vw;
-    }
-    .hover, .hover2{
+        width: 66vw;
+        height: 66vw;
         top: 3.5%;
         right: 3%;
     }
-}
-
-@media(max-width: 992px){ /*Ordinateur*/
-    
 }
