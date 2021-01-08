@@ -14,7 +14,7 @@ legend {
 
 
 article.mainTexte{
-	width:75%;
+	
 	margin:auto;
 	background-clip: padding-box;
     border: 30px;
@@ -31,9 +31,10 @@ article.mainTexte{
 form{
 	width: 100%
 }
-fieldset.F1, fieldset.F2{
-	width: 100%;
+fieldset.F1{
+	width: 50%;
 }
+
 
 fieldset.F1 div {
 	display:flex;
@@ -55,6 +56,7 @@ fieldset.F1 input{
 fieldset.F2{
 	display: flex;
 	flex-direction: column;
+	width: 70%;
 	
 }
 
@@ -86,22 +88,25 @@ input[type=radio] { border: 0px; width: 100%; height: 3vw; }
 
 .envoyer{
 	width:30%;
+
 	min-width: 100px;
 	display: block;
 	margin-left: auto;
     margin-right: auto;
-	height:50px;
+	
 	font-size: 100%;
 	margin-top: 8%;
-
+	transition: width 2s;
 }	
-
+.envoyer:hover{
+	width: 50%;
+}
 
 #animation{
 	margin-top : 10vh;
 	position : relative;
-	width: 400px;
-	height: 200px;
+	width: 25vw;
+	height: 10vw;
 
 	/*background-image:url("images/ingenieur.jpg");
 	background: red;*/
@@ -109,11 +114,31 @@ input[type=radio] { border: 0px; width: 100%; height: 3vw; }
 	margin-bottom: 10px;
 }
 
+#animation img{
+	width:25vw;
+} 
 
+article fieldset.F2,fieldset.F1{
+	transition: width 2s; 
+}
+article fieldset.F2:hover{
+	width: 100%;
+
+}
+article fieldset.F1:hover{
+	width: 100%;
+}
+article textarea{
+	height: 10vw;
+	transition: height 4s;
+}
+article textarea:hover {
+	height: 20vw;
+}
 @keyframes mymove {
-  0%{top: 0px; left : -35%;}
-  50%{top: 0px; left: 35%;}
-  100%{top: 0px; left : -35%;}
+  0%{top: 0px; left : -33vw;}
+  50%{top: 0px; left: 33vw;}
+  100%{top: 0px; left : -33vw;}
   
 }
 
@@ -126,8 +151,8 @@ input[type=radio] { border: 0px; width: 100%; height: 3vw; }
 
 	}
 	#animation {
+
 		animation : none;
 	}
 
-	
 }
