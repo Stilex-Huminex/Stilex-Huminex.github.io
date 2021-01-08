@@ -102,7 +102,7 @@ div#Preface>p {
 .accordeon .question label:before {
     font-family: "Exo-Regular";
     font-size: larger;
-    content: "^";
+    content: "\21EF";
     display: inline-block;
     margin-right: 10px;
     font-size: 1em;
