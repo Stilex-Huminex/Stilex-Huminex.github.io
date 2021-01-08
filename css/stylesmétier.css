@@ -147,6 +147,9 @@ article textarea:hover {
 }
 
 @media(max-width:768px){
+	h1{
+		font-size: 150%;
+	}
 	fieldset.F2 {
 		display: none;
 	}
@@ -160,6 +163,17 @@ article textarea:hover {
 	}
 	article.mainTexte{
 		width:70%;
-	}
 
+	}
+	main{
+		width:100%;
+	}
+	fieldset.F1 .radio{
+		border:none;
+		display:flex;
+		flex-direction: column
+	}
+	fieldset.F1,fieldset.F3{
+		border:none;
+	}
 }
