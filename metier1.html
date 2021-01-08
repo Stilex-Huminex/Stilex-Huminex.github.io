@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>Stilex-Huminex - Accueil</title>
 	  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	  <link rel="stylesheet" type="text/css" href="css/stylesContact.css">
 	  <link rel="stylesheet" type="text/css" href="css/stylesmétier.css"/>
       <link rel="icon" type="image/ico" href="images/favicon.ico"/>
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,23 +56,23 @@
 	    				
 			    		<fieldset class="F1">		   
 								<legend><h2>Informations personnelles</h2></legend>
-								<div>
-									<label for="NomFamille">Nom * : </label>
-									<input class="input" id="Nomfamille" name="firstname" type="text"  maxlength="25"  placeholder= "Entrez votre nom ici" required>
+								<div class="input">
+									<label for="NomFamille" class="input-objet">Nom * : </label>
+									<input  class="input-champ" id="Nomfamille" name="firstname" type="text"  maxlength="25"  placeholder= "Entrez votre nom ici" required>
 								</div>
 
-								<div>
-									<label for="Prenom">Prénom * : </label>
-									<input id="Prenom" name="secodnname" type="text"  placeholder= "Entrez votre prénom ici" maxlength="25" required> 
+								<div class="input">									
+									<label class="input-objet" for="Prenom">Prénom * : </label>
+									<input class="input-champ" id="Prenom" name="secodnname" type="text"  placeholder= "Entrez votre prénom ici" maxlength="25" required> 
 								</div>
 								<div>
-									<label for="homme">Homme</label>
-									<input type="radio" id="homme" name="sexe" value="homme" checked>
+									<label class="input-objet" for="homme">Homme</label>
+									<input  type="radio" id="homme" name="sexe" value="homme" checked>
 
-									<label for="femme">Femme</label>
-									<input type="radio" id="femme" name="sexe" value="femme">
+									<label  class="input-objet" for="femme">Femme</label>
+									<input  type="radio" id="femme" name="sexe" value="femme">
 
-									<label for="Autre">Autre</label>
+									<label class="input-objet" for="Autre">Autre</label>
 									<input type="radio" id="Autre" name="sexe" value="femme">
 								</div>				
 								
@@ -83,9 +84,10 @@
 						<fieldset class="F2">
 							
 							<legend><h2>Écrire votre lettre de motivation</h2></legend>
-							<label for="lettremotivation">Lettre de motivation * :</label>
-							<textarea name="message" id = "lettremotivation" rows="15" cols="50" placeholder="Veuillez écrire votre lettre de motivation" tabindex="15"></textarea>
-
+							<div class="input2">
+							<label class="input-objet" for="lettremotivation">Lettre de motivation * :</label>
+							<textarea  class="input-champ"  name="message" id = "lettremotivation" rows="15" cols="50" placeholder="Veuillez écrire votre lettre de motivation" tabindex="15"></textarea>
+						</div>
 						</fieldset>     
 
 
@@ -93,8 +95,11 @@
 					
 						<fieldset class="F3">
 							<legend><h2>Envovyé nous votre CV </h2></legend>
-							<label for="cv"> Joindre votre CV </label>
-							<input id="cv" name="monCv" type="file" required>
+							<div class="input">
+
+							<label class="input-objet" class="label-file" for="cv"> Joindre votre CV </label>
+							<input class="input-file" id="cv" name="monCv" type="file" required>
+							</div>
 						</fieldset>
 					
 					
