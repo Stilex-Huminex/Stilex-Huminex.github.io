@@ -9,6 +9,7 @@ main article{
     text-align: justify;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
 }
@@ -30,18 +31,13 @@ section:nth-child(odd) article:last-child{
 section:not(:first-of-type):nth-child(even) article:first-child{
     margin-left: 20px;
 }
-section:not(:first-of-type) article{
-    height: 800px;
-}
 h2{
+    font-weight: bold;
     font-size: 1.75vw;
     text-align: center;
 }
 h2 p{
     margin: 0;
-}
-article > p{
-    font-size: 1vw;
 }
 
 /*--Fin Graal--*/
@@ -51,11 +47,7 @@ article > p{
     main article{width: auto;}
     h1{font-size: 2em;}
     h2{font-size: 1.5em;}
-    article > p{ font-size: 2.75vw;}
     section , section:nth-child(even) {flex-direction: column-reverse;}
     section:nth-child(odd) article:last-child, 
     section:not(:first-of-type):nth-child(even) article:first-child{margin-left: 0;}
-}
-@media(max-width:480px){
-    article > p { font-size: 3.25vw;}
 }
