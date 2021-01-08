@@ -158,5 +158,8 @@ article textarea:hover {
 
 		animation : none;
 	}
+	article.mainTexte{
+		width:70%;
+	}
 
 }
