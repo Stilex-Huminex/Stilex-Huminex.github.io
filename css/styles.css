@@ -112,6 +112,9 @@ a:hover {
     margin: auto;
     filter: drop-shadow(2px 2px 4px #000000);
 }
+.smartWatch{
+    display: none;
+}
 #rejoindre{
     z-index: 30;
 }
@@ -250,12 +253,30 @@ body{
         filter: drop-shadow(2px 2px 4px #000000);
     }
 }
-/*@media(max-width:168px){
-    body *{display: none;}
-    aside {display: inline;}
-    .facts {display: inline;}
-    .facts *{display: inline;}
+@media(max-width:168px){
+    html body *{display: none;}
+    .smartWatch{
+        display: flex;
+        flex-direction: column;
+    }
+    .smartWatch p{
+        margin-bottom: 0;
+        text-align: center;
+        font-family: "Exo-Regular";
+        font-size: medium;
+    }
+    .smartWatch #Logo{
+        width: 168px;
+    }
+    .smartWatch #Logo:hover{
+        filter:initial;
+    }
+    .smartWatch *{
+        display: inline;
+        color:white;
+    }
+    body{
+        min-height: 0;
+        height: 152px;
+    }
 }
-@media(min-width:768px){
-    .burger {display:none;}
-}*/
