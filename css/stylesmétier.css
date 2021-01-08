@@ -24,6 +24,8 @@ article.mainTexte{
     border-color:  #00e4d55d;
     font-size: larger;
     background-color: #ffffffbb;
+
+
 }
 
 form{
@@ -61,7 +63,7 @@ fieldset.F3{
 	display:flex;
 	flex-direction: column;
 	align-items:center;
-	width : 50%;
+	width : 80%;
 	
 
 }
@@ -71,18 +73,17 @@ fieldset.F3 input{
 	font-size: 80%;
 }
 
-input[type=radio] { border: 0px; width: 100%; height: 3em; } 
-label.label-file{
+input[type=radio] { border: 0px; width: 100%; height: 3vw; } 
+
+
+
+.F3 > .input > .input-objet:nth-child(1){
 	cursor:pointer;
-	color: #00b1ca;
+	color: #124380;
 	font-weight: bold;
 }
-.label-file:hover{
-	color: #25a5c4;
-}
-.input-file{
-	display:none;
-}
+
+
 .envoyer{
 	width:30%;
 	min-width: 100px;
