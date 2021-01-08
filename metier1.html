@@ -85,7 +85,7 @@
 							
 							<legend><h2>Écrire votre lettre de motivation</h2></legend>
 							<div class="input2">
-							<label class="input-objet" for="lettremotivation">Lettre de motivation * :</label>
+							<label class="input-objet" for="lettremotivation">Lettre de motivation :</label>
 							<textarea  class="input-champ"  name="message" id = "lettremotivation" rows="15" cols="50" placeholder="Veuillez écrire votre lettre de motivation" tabindex="15"></textarea>
 						</div>
 						</fieldset>     
@@ -96,8 +96,12 @@
 						<fieldset class="F3">
 							<legend><h2>Envovyé nous votre CV </h2></legend>
 							<div class="input">
+							<label class="input-objet" class="label-file" for="cv"> Joindre votre CV *</label>
+							<input class="input-file" id="cv" name="monCv" type="file" required>
+							</div>
 
-							<label class="input-objet" class="label-file" for="cv"> Joindre votre CV </label>
+							<div class="input">
+							<label class="input-objet" class="label-file" for="cv"> Joindre votre Lettre de motivation (si non présenter en texte)</label>
 							<input class="input-file" id="cv" name="monCv" type="file" required>
 							</div>
 						</fieldset>
