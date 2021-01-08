@@ -13,76 +13,10 @@ main article{
     width: 100%;
 }
 
-ul{
-    padding-inline-start: 20px;
-}
-
-ul li{
-    color: black;
-    margin: 20px 0px;
-}
-
 article h3{
     margin: 0;
 }
-/*--Le Bon Graal--*/
 
-.graal {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-.graal-corps {
-    display: flex;
-    flex: 1;
-}
-
-.graal-contenu {
-    flex: 1;
-}
-
-.graal-nav,
-.graal-pub {
-	flex: 0 0 12em;
-	max-width: 300px;
-}
-
-.graal-nav {
-    order: -1;
-}
-
-.graal-contenu{
-    margin: 0px 50px;
-    border: 15px;
-    padding: 10px;
-}
-.graal-nav{
-    background-clip: padding-box;
-    border: 15px;
-    padding: 10px;
-    border-style: solid;
-    border-color:  #00e4d55d;
-    font-size: large;
-    background-color: #ffffffbb;
-}
-.graal-pub{
-    background-clip: padding-box;
-    border: 15px;
-    padding: 10px;
-    border-style: solid;
-    border-color:  #00e4d55d;
-    font-size: large;
-    background-color: #ffffffbb;
-}
-.graal-nav a{
-    filter: drop-shadow(1px 1px 1px #000000);
-}
-
-h1#entete {
-    font-family: "Exo-Regular";
-    font-size: 1.8em;
-}
 section{
     display: flex;
     flex-direction: row;
@@ -114,9 +48,6 @@ article > p{
 
 
 @media(max-width:768px){
-    .graal-nav, .graal-pub {display: none;}
-    .graal-contenu {margin: 0;}
-    .graal-corps {width: 95%;}
     main article{width: auto;}
     h1{font-size: 2em;}
     h2{font-size: 1.5em;}

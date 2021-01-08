@@ -10,41 +10,6 @@
     100%{background-position:50% 0%}
 }
 
-/*--Le Bon Graal--*/
-
-.graal {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-.graal-corps {
-    display: flex;
-    flex: 1;
-}
-
-.graal-contenu {
-    flex: 1;
-}
-
-.graal-nav,
-.graal-pub {
-	flex: 0 0 12em;
-	max-width: 300px;
-}
-
-.graal-nav {
-    order: -1;
-}
-.graal-nav a{
-    filter: drop-shadow(1px 1px 1px #000000);
-}
-
-.graal-contenu{
-    margin: 0px 50px;
-    border: 15px;
-    padding: 10px;
-}
 section {
     margin: 0px 50px 20px;
     background-clip: padding-box;
@@ -61,44 +26,6 @@ section:last-of-type{
     margin-top: 20px;
 }
 
-div.Foire {
-    margin: 0px 50px;
-    padding: 10px;
-    text-align: justify;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-div.Foire span{
-    border: 1mm ridge black;    
-    display: block;
-    background-color: black;
-    width: 100%;
-}
-
-.graal-nav{
-    background-clip: padding-box;
-    border: 15px;
-    padding: 10px;
-    border-style: solid;
-    border-color:  #00e4d55d;
-    font-size: large;
-    background-color: #ffffffbb;
-    overflow-y: auto;
-}
-.graal-pub{
-    background-clip: padding-box;
-    border: 15px;
-    padding: 10px;
-    border-style: solid;
-    border-color:  #00e4d55d;
-    font-size: large;
-    background-color: #ffffffbb;
-}
-
-/*--Fin Graal--*/
 
 div.questions {
     display:flex;
@@ -124,36 +51,12 @@ div.encadre article {
     display: flex;
 }
 
-h1#entete {
-    font-family: "Exo-Regular";
-    font-size: 2em;
-    color: black;
-    padding-bottom: 0.5vw;
-    border-bottom: 1mm ridge black;
-}
-
 div#Preface>p {
     text-align: center;
     font-style: italic;
     font-weight: bold;
     font-size: larger;
     color: white;
-}
-
-ul{
-    padding-inline-start: 20px;
-}
-
-ul li{
-    color: black;
-    margin: 20px 0px;
-}
-
-ul li:last-child{
-    border-top: 1mm ridge black;
-    padding-top: 1vw;
-    font-size: larger;
-    font-style: italic; 
 }
 
 #souligne{
@@ -248,25 +151,21 @@ div.reponse>p {
     
 }
 
-
 .accordeon:last-of-type label{
     filter: saturate(0);
     font-style: italic;
     border-color: rgb(75, 75, 75);
 }
 
+ul li:last-child{
+    border-top: 1mm ridge black;
+    padding-top: 1vw;
+    font-size: larger;
+    font-style: italic; 
+}
 
 
 @media(max-width:768px){
-    .graal-nav, .graal-pub {display: none;}
-    .graal-contenu {margin: 0;}
-    .graal-corps {width: 95%;}
-    div.Foire{
-        width:auto;
-        margin: 0;
-    }
-    label{font-size: large;}
-    .reponse p{font-size: medium;}
     section {
         background-clip: padding-box;
         border: 15px;
@@ -277,22 +176,5 @@ div.reponse>p {
         width: 100%;
         width: auto;
         margin:0px 0px 20px;
-    }
-    .Foire{
-        margin: 0px 50px 20px;
-        background-clip: padding-box;
-        border: 15px;
-        padding: 10px;
-        border-style: solid;
-        border-color:  #00e4d55d;
-        background-color: #ffffffbb;
-        text-align: justify;
-        width: 100%;
-    }
-    h1{
-        font-size: 2em;
-    }
-    h2{
-        margin:0;
     }
 }
