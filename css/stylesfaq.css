@@ -127,7 +127,7 @@ div#Preface>p {
 }
 
 .accordeon > input[name="collapse"]:checked ~ .reponse {
-    max-height: 100vh;
+    max-height: none;
     transition: max-height 0.3s;
     border: black;
     border-style: solid;
