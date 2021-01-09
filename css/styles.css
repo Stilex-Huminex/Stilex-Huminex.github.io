@@ -117,7 +117,7 @@ a:hover {
 .smartWatch{
     display: none;
 }
-#rejoindre{
+.surmenu{
     z-index: 30;
 }
 div:hover > .submenu {
@@ -269,7 +269,7 @@ body{
     }
     .smartWatch #logo2{
         filter:  invert(99%) sepia(56%) saturate(642%) hue-rotate(66deg) brightness(100%) contrast(102%) drop-shadow(2px 2px 4px #000000);
-        width: 168px;
+        width: 152px;
     }
     .smartWatch *{
         display: inline;

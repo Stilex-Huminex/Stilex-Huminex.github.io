@@ -31,6 +31,14 @@ section:nth-child(odd) article:last-child{
 section:not(:first-of-type):nth-child(even) article:first-child{
     margin-left: 20px;
 }
+section:first-of-type article img{
+    float: left;
+    width:20vw;
+    shape-outside: ellipse();
+}
+section:first-of-type article {
+    display: block;
+}
 h2{
     font-weight: bold;
     font-size: 1.75vw;
@@ -39,6 +47,9 @@ h2{
 h2 span{
     margin: 0;
     display: block;
+}
+h2 a{
+    font-size: 4vw;
 }
 
 /*--Fin Graal--*/
@@ -51,4 +62,7 @@ h2 span{
     section , section:nth-child(even) {flex-direction: column-reverse;}
     section:nth-child(odd) article:last-child, 
     section:not(:first-of-type):nth-child(even) article:first-child{margin-left: 0;}
+    section:first-of-type article {display: flex;}
+    section:first-of-type article img{width: 35vw;}
+
 }
