@@ -36,8 +36,9 @@ h2{
     font-size: 1.75vw;
     text-align: center;
 }
-h2 p{
+h2 span{
     margin: 0;
+    display: block;
 }
 
 /*--Fin Graal--*/

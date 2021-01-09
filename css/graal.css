@@ -72,16 +72,15 @@
     background-color: #ffffffbb;
 }
 
-h1#entete {
+#entete {
     font-family: "Exo-Regular";
     font-size: 2em;
     color: black;
     padding-bottom: 0.5vw;
     border-bottom: 1mm ridge black;
 }
-
-ul{
-    padding-inline-start: 20px;
+ul {
+    padding-left: 20px;
 }
 
 ul li{

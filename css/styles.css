@@ -28,6 +28,9 @@ h1 {
     font-size: 50px;
     text-align: center;
 }
+h2{
+    text-align: center;
+}
 
 h3{
 	color: #FFFFFF;
@@ -100,7 +103,6 @@ a:hover {
 }
 .submenu {
     z-index: 0;
-    pointer-events: auto;
     display: none;
     position: absolute;
     top: 0.1vw;
@@ -265,11 +267,9 @@ body{
         font-family: "Exo-Regular";
         font-size: medium;
     }
-    .smartWatch #Logo{
+    .smartWatch #logo2{
+        filter:  invert(99%) sepia(56%) saturate(642%) hue-rotate(66deg) brightness(100%) contrast(102%) drop-shadow(2px 2px 4px #000000);
         width: 168px;
-    }
-    .smartWatch #Logo:hover{
-        filter:initial;
     }
     .smartWatch *{
         display: inline;
