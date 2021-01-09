@@ -33,7 +33,7 @@ section:not(:first-of-type):nth-child(even) article:first-child{
 }
 section:first-of-type article img{
     float: left;
-    width:450px;
+    width:20vw;
     shape-outside: ellipse();
 }
 section:first-of-type article {
@@ -62,4 +62,7 @@ h2 a{
     section , section:nth-child(even) {flex-direction: column-reverse;}
     section:nth-child(odd) article:last-child, 
     section:not(:first-of-type):nth-child(even) article:first-child{margin-left: 0;}
+    section:first-of-type article {display: flex;}
+    section:first-of-type article img{width: 35vw;}
+
 }
