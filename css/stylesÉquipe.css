@@ -104,9 +104,9 @@ main{
         height: 70vw;
     }
     .image2, .image3, .hover, .hover2{
-        width: 66vw;
-        height: 66vw;
-        top: 3.5%;
-        right: 3%;
+        width: 66.5vw;
+        height: 66.5vw;
+        top: 2.9%;
+        right: 2.5%;
     }
 }
