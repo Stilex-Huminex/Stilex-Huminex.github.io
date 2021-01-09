@@ -6,10 +6,10 @@ h1{
 legend {
 	text-align: center;
 	background: linear-gradient(90deg,#00e4d5,#3942c6);
-	background-clip: text;
+	background-clip: inherit;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-
 
 main{
 	align-items: center;
@@ -25,9 +25,6 @@ article.mainTexte{
     border-color:  #00e4d55d;
     font-size: larger;
     background-color: #ffffffbb;
-
-    
-
 
 }
 

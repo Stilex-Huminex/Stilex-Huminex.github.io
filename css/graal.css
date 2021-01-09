@@ -80,9 +80,8 @@
     border-bottom: 1mm ridge black;
     text-align: center;
 }
-
-ul{
-    padding-inline-start: 20px;
+ul {
+    padding-left: 20px;
 }
 
 ul li{
