@@ -28,8 +28,8 @@ article.mainTexte{
 
 }
 fieldset{
-	border: 5px black solid;
-	border-style: none double none;
+	border: 5px #124380;
+	border-style: none double none double;
 
 }
 form{
