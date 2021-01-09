@@ -117,7 +117,7 @@ a:hover {
 .smartWatch{
     display: none;
 }
-#rejoindre{
+.surmenu{
     z-index: 30;
 }
 div:hover > .submenu {
