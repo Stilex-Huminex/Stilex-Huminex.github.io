@@ -108,6 +108,14 @@ aside img
 		font-size : 6vw;
 	}
 	main{
-		width: 95%;
+		width: auto;
+	}
+
+	.block1 .oui{
+		margin-top : 10vw;
+		margin-bottom: 10vw;
+	}
+	.oui a{
+		font-size: 60%;
 	}
 }
