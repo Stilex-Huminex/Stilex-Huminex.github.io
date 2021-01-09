@@ -18,7 +18,7 @@ h1
 	font-size : 200%;
 	text-decoration: none;
 	background: linear-gradient(90deg,#00e4d5,#3942c6);
-	background-clip: text;
+	
 	-webkit-text-fill-color: transparent;
 
 }
