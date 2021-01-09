@@ -265,11 +265,9 @@ body{
         font-family: "Exo-Regular";
         font-size: medium;
     }
-    .smartWatch #Logo{
+    .smartWatch #logo2{
+        filter:  invert(99%) sepia(56%) saturate(642%) hue-rotate(66deg) brightness(100%) contrast(102%) drop-shadow(2px 2px 4px #000000);
         width: 168px;
-    }
-    .smartWatch #Logo:hover{
-        filter:initial;
     }
     .smartWatch *{
         display: inline;
