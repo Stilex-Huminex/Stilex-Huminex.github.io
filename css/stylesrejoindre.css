@@ -19,7 +19,6 @@ h1
 	text-decoration: none;
 	background: linear-gradient(90deg,#00e4d5,#3942c6);
 	background-clip: text;
-	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
 }
@@ -87,7 +86,6 @@ aside img
 {
 	display:block;
 	text-align: justify;
- 	text-justify: space-around;
  	font-size: 80%;
 }
 
